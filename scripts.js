@@ -65,20 +65,20 @@ function animation(){
   
   if(window.innerWidth > 1024){
   //left
-    animateLeftTiles(".documentation")
+    
     animateLeftTiles(".billing")
     animateLeftTiles(".inbox")
     animateLeftTiles(".reporting")
 
   // right
-    animateRightTiles(".workforce")
+    
     animateRightTiles(".labs")
     animateRightTiles(".reminders")
     animateRightTiles(".portal")
 
     //center
-    // animateCenterTiles(".scheduling")    
-    // animateCenterTiles(".telehealth")
+    animateCenterTiles(".platform")    
+    animateCenterTiles(".integrations")
   }  
   
 }
@@ -89,7 +89,7 @@ function animateLeftTiles(tile){
       scrollTrigger: {
         trigger: tile,
         start: "top 70%",
-        end: "bottom 80%",
+        end: "bottom 90%",
         scrub: true,        
         markers: false,
       },      
@@ -109,7 +109,7 @@ function animateRightTiles(tile){
     scrollTrigger: {
       trigger: tile,
       start: "top 70%",
-      end: "bottom 80%",
+      end: "bottom 90%",
       scrub: true,      
       markers: false,
     },    
@@ -127,15 +127,16 @@ function animateCenterTiles(tile){
   gsap.from(tile, {
     scrollTrigger: {
       trigger: tile,
-      start: "top 70%",
+      start: "top 90%",
       end: "bottom 90%",
       scrub: true,      
       markers: false,
     },
-    opacity: 0,
-    
-    duration: 3,
+    opacity: 0, 
+    y: 50,   
+    scale: 0.8,
+    duration: 5,
     stagger: 1,      
-    ease: "power2.in",
+    ease: "ease",
   })
 }

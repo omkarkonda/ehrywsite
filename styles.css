@@ -23,7 +23,7 @@ input, button, textarea, select {
 html, body {
     font-family: Inter, sans-serif;
     font-size: 16px;
-    
+    scrollbar-width: thin;
     background: #F8FAFB;
     
 }
@@ -39,30 +39,31 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
-section[id^="page"] {
-    margin-bottom: 100px;
-}
 
 
 .topnav{
     background-color: var(--dull-gray);
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 0.8rem;
-    padding:0.3rem;
+    justify-content: flex-end;       
     position: fixed;
     width: 100%;
     z-index: 1;
+    margin-right: 1.15rem;
+    height: auto;
+    top:0;
 }
 
 .topnav a{
     text-decoration: none;
     color: var(--navy-blue);
-    font-weight: 300;
-    font-size: 0.8rem;
+    font-weight: 500;    
+    margin-right: 15px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding-block: 5px;
+    
 }
-nav{
+nav.banner{
     display: flex;
     justify-content: space-between;    
     align-items: center;
@@ -84,7 +85,7 @@ nav{
     }
     
     
-    ul {
+    ul.dektop__menu {
         display: flex;
         list-style: none;
         margin-inline: auto;
@@ -99,6 +100,7 @@ nav{
             .menuitem{                
                 padding:5px 10px;
                 display: flex;
+                font-size: 1.1rem;
             }    
             
             ul.dropdown{
@@ -177,25 +179,27 @@ nav{
         text-decoration: none;
         color: black;
         font-weight: 500;
-        font-size: 0.9rem;
+        font-size: inherit;
         white-space: nowrap;
     }
 
     .col2{
         display: flex;
-        gap:25px
+        gap:25px;
+
+        #search{
+            border: 1px solid var(--dull-gray);        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius:4px;
+            max-height: 2rem;
+    
+    
+        }
     }
 
-    #search{
-        border: 1px solid var(--dull-gray);        
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius:4px;
-        max-height: 2rem;
-
-
-    }
+   
     #search > i{
         cursor: pointer;
         background-color: transparent;
@@ -215,7 +219,7 @@ nav{
         outline: none;
     }
 
-    button{
+    .demo__btn{
         margin-left: auto;
         border: none;
         background-color: var(--violet);
@@ -225,13 +229,26 @@ nav{
         border-radius: 4px;
         max-height: 2rem;
         white-space: nowrap;
+        cursor: pointer;
     }
 
-    div.sidemenu{
+    .sidemenu__btn{
         display: none;
+        cursor: pointer;
+        appearance: none;
+        border: none;
+        background-color: transparent;
+        padding: 1rem;
+        i{
+            font-size: 1.5rem;
+        }
         @media screen and (width <=  1024px) {
             display: block;
         }
+    }
+
+    &:has(.sidemenu__btn:focus-within) + nav.mobile__menu{
+        right:0;        
     }
   
     @media screen and (width <=  1024px) {
@@ -253,29 +270,174 @@ nav{
 
 
 
-.topnav, nav ul, nav #search, nav button{
+.topnav, nav.banner ul.dektop__menu, nav .col2{
     @media screen and (width <=  1024px) {
         display: none;        
     }
 }
 
 
+nav.mobile__menu{
+    position: fixed;
+    top:0;
+    right:-100%;
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    z-index: 10;    
+    background-color: rgba(0, 0, 0, 0.5);  
+    transition: right 0.3s ease;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (width >  1024px) {
+        display: none;
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;        
+        gap:.5rem;
+        background-color: white;
+        li:not(.link){
+            margin-left: 1.5rem;
+        }
+        li.links{
+            display: flex;                        
+            justify-content: space-between;
+            margin: 0.5rem;
+            border-bottom: 1px solid var(--dull-gray);
+            a{
+                display: block; 
+                padding: 0.5rem;               
+                font-weight: bold;
+            }
+            a.demo{
+                background-color: var(--violet);
+                color: white;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        ul.dropdown{
+            margin-left:-20px;
+            margin-bottom:1.5rem;
+            margin-top: 0.5rem;
+            a{                                
+                font-size: 0.9rem;
+                display: block;
+                padding-block: 0.2rem;
+                text-decoration: underline;
+                text-decoration-color: var(--dull-gray);
+                text-decoration-thickness: 4px; 
+                transition: text-decoration-color 0.5s ease;   
+            }
+            a:hover{
+                text-decoration-color: var(--navy-blue);
+            }
+        }
+       
+    }
+
+    
+
+}
+
 
 #page1{    
-    display: grid;           
-    height: calc(100vh - 93px);
+    display: grid;               
     background: url(./assets/images/herobg.png) no-repeat center 30%;
     position: relative;
+    margin-block: 20vh;
     @media screen and (width <=  1024px) {
         width: calc(100vw - 2rem);
         margin-inline: auto;
         height: auto;
-        .scroll__helper{
-            display: none;
-        }
+       
     }
-
-    .scroll__helper{
+    .hero{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;    
+        align-items: center;
+        overflow: hidden;
+        
+        h1{    
+            font-size: 4rem;
+            max-width: 20ch;
+            text-align: center;
+            letter-spacing: -2px;
+            color: var(--sky-blue);
+            opacity: 0;
+            
+            background-image: linear-gradient(180deg, var(--sky-blue) 0%, var(--violet) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            -ms-text-fill-color: transparent;
+            -o-text-fill-color: transparent;
+    
+            @media screen and (width <=  920px) {
+                font-size: 3rem;
+            }
+        }
+    
+        p, h2{
+            text-align: center; 
+        }
+    
+        h2{
+            display: flex;
+            gap:30px;
+            justify-content: center;
+            white-space: nowrap;
+            font-size: 1.5rem;
+            span:first-child{
+                color:var(--sky-blue);
+                opacity: 0;
+            }
+    
+            span:nth-child(2){
+                color:var(--violet);
+                opacity: 0;
+            }
+            
+            span:last-child{
+                opacity: 0;
+                color:var(--navy-blue);
+            }
+        }
+    
+    
+        .main__CTA__btn{
+            background-color: var(--violet);
+            color:white;
+            cursor: pointer;
+            padding:1rem;
+            border-radius: 8px;
+            border:none; 
+            width: 250px;
+            white-space: nowrap;
+            
+            /* box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12); */
+        }
+    
+          
+    }
+    
+    /* .scroll__helper{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -288,10 +450,9 @@ nav{
         text-align: center;
         border-radius: 10px;
         svg{
-            animation: mouse 1s ease-in-out infinite;
-            
+            animation: mouse 1s ease-in-out infinite;            
         }
-    }
+    } */
     
    
 }
@@ -303,96 +464,17 @@ nav{
     
 }
 
-.hero{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;    
-    align-items: center;
-    overflow: hidden;
-    margin-top:160px;
-    h1{    
-        font-size: 4rem;
-        max-width: 20ch;
-        text-align: center;
-        letter-spacing: -2px;
-        color: var(--sky-blue);
-        opacity: 0;
-        
-        background-image: linear-gradient(180deg, var(--sky-blue) 0%, var(--violet) 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -moz-text-fill-color: transparent;
-        -ms-text-fill-color: transparent;
-        -o-text-fill-color: transparent;
-
-        @media screen and (width <=  920px) {
-            font-size: 3rem;
-        }
-    }
-
-    p, h2{
-        text-align: center; 
-    }
-
-    h2{
-        display: flex;
-        gap:30px;
-        justify-content: center;
-        white-space: nowrap;
-        font-size: 1.5rem;
-        span:first-child{
-            color:var(--sky-blue);
-            opacity: 0;
-        }
-
-        span:nth-child(2){
-            color:var(--violet);
-            opacity: 0;
-        }
-        
-        span:last-child{
-            opacity: 0;
-            color:var(--navy-blue);
-        }
-    }
 
 
-    .main__CTA__btn{
-        background-color: var(--violet);
-        color:white;
-        cursor: pointer;
-        padding:1rem;
-        border-radius: 8px;
-        border:none; 
-        width: 250px;
-        white-space: nowrap;
-        
-        /* box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-        0 12.5px 10px rgba(0, 0, 0, 0.06),
-        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-        0 100px 80px rgba(0, 0, 0, 0.12); */
-    }
 
-      
-}
-
-
-.stickySection{
-    position: sticky;
-    top:93px;
-}
 
 #page2{
     min-width: 30ch;
-    max-width:1200px;
-    height: 100vh;
+    max-width:1200px;    
     margin-inline:auto;
+    margin-bottom: 10vh;
     display: grid;
-    place-content: center;
+    
     gap:1rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 150px);
@@ -604,7 +686,8 @@ nav{
 
 #page3{
 
-    margin: 5rem auto;
+    margin-bottom: 10vh;
+    
     .container{        
         max-width: 1200px;        
         padding: 3rem;
@@ -710,10 +793,11 @@ nav{
 
 #page4{
     max-width: 1200px;        
-    padding: 3rem;
+    padding: 5rem 0;
     border-radius: 1rem;
     margin-inline: auto ;    
     border-radius: 1rem;
+    margin-bottom: 10vh;
 
     h2{
         color: #000;
@@ -740,7 +824,7 @@ nav{
 }
 
 #page5{
-    margin-top: 150px;
+    margin: 10rem 0;
     position: relative;
     .capterra{
         position: relative;
@@ -837,7 +921,7 @@ nav{
 
         .left__arrow, .right__arrow{
             cursor: pointer;
-            width: 100px;            
+            width: 60px;            
             aspect-ratio: 1;
             border-radius: 50%;
             background-color: var(--dull-gray);
@@ -894,3 +978,7 @@ nav{
 }
 
 
+/* nav, section, main{
+    outline:1px solid red;
+    background-color: rgba(223, 151, 129, 0.219);
+} */
