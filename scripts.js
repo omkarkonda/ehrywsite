@@ -77,9 +77,8 @@ function animation(){
     animateRightTiles(".portal")
 
     //center
-    animateCenterTiles(".scheduling")
-    
-    animateCenterTiles(".telehealth")
+    // animateCenterTiles(".scheduling")    
+    // animateCenterTiles(".telehealth")
   }  
   
 }
