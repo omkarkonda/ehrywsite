@@ -339,8 +339,6 @@ nav.mobile__menu{
        
     }
 
-    
-
 }
 
 
@@ -370,15 +368,7 @@ nav.mobile__menu{
             letter-spacing: -2px;
             color: var(--sky-blue);
             opacity: 0;
-            
-            background-image: linear-gradient(180deg, var(--sky-blue) 0%, var(--violet) 100%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-            -ms-text-fill-color: transparent;
-            -o-text-fill-color: transparent;
-    
+          
             @media screen and (width <=  920px) {
                 font-size: 3rem;
             }
@@ -513,18 +503,21 @@ nav.mobile__menu{
          rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
         p{
-            color: #003C65;
+            color: #003C65; 
             text-align: center;
             -webkit-text-stroke-width: 1;
             -webkit-text-stroke-color: #FFF;
             font-family: Manrope;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 600;
             line-height: normal;
             pointer-events: none;
             transition: all 0.6s ease-in-out;
             
+            @media screen and (width <=  1024px) {
+                font-size: 1.2rem;
+            }
         }
 
    
@@ -598,14 +591,14 @@ nav.mobile__menu{
         &:has(:first-child:hover) p, 
         &:has(:last-child:hover) p{
             color: white;
-            transform: translateX(10px);            
+            transform: translateX(20px);            
         }
 
         &:has(:first-child:hover) svg, 
         &:has(:last-child:hover) svg{
             display: block;
             fill:white;
-            /* transform: translateY(30px);             */
+            
         }
        
     }
