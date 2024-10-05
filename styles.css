@@ -68,7 +68,7 @@ nav.banner{
     justify-content: space-between;    
     align-items: center;
     position: fixed;
-    top:22px;
+    top:24px;
     padding:1rem;
     width: 100%;
     background-color: #F8FAFB;
@@ -84,13 +84,13 @@ nav.banner{
         list-style: none;
         margin-inline: auto;
         align-items: center;
-
+        gap: 2rem;
         li{             
             border-radius: 2px; 
             cursor: pointer;
             .menuitem{                
                 padding:5px 10px;
-                display: flex;
+                
                 font-size: 1.1rem;
             }    
             
@@ -136,10 +136,8 @@ nav.banner{
                 li{ 
                   padding: 0.7rem;
                   border-radius:3px;                  
-                  a{
-                    text-decoration: underline var(--dull-gray) 3px;
-                    transition: text-decoration-color 0.5s ease;
-                  }
+                  transition: all 0.2s ease;
+                  
                 }
                 li.product_release{
                     background-color: var(--dull-gray);
@@ -147,12 +145,15 @@ nav.banner{
                     text-align: center;
                     margin-top: 10px;
                     a{
-                        text-align: center;                      
+                        text-align: center;
+                                    
                     }
                 }   
                 li:hover{
+                    transform: translateX(-2px);
                     a{
-                        text-decoration-color: var(--navy-blue);                        
+                        color: var(--navy-blue);
+                                         
                     }
                 }
             }
@@ -182,21 +183,21 @@ nav.banner{
         gap:25px;
 
         #search{
-            border: 1px solid var(--dull-gray);        
+            
+            background-color: rgba(217,217,217,0.2);    
+            border: 1px solid rgba(0, 0, 0, 0.05);
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-radius:4px;
-            max-height: 2rem;
-    
-    
+            height: 2.5rem;
+            width: 325px;
         }
     }
 
    
-    #search > i{
-        cursor: pointer;
-        background-color: transparent;
+    #search > img{
+        cursor: pointer;        
         padding-inline: 5px;
         
     }
@@ -214,16 +215,16 @@ nav.banner{
     }
 
     .demo__btn{
-        margin-left: auto;
+        
         border: none;
         background-color: var(--violet);
-        font-size: 0.8rem;
-        color: white;
-        padding:0.5rem 1rem;
+        font-size: 0.9rem;
+        color: white;        
         border-radius: 4px;
-        max-height: 2rem;
+        height:40px;
         white-space: nowrap;
         cursor: pointer;
+        padding:0 1rem;
     }
 
     .sidemenu__btn{
@@ -346,17 +347,19 @@ nav.mobile__menu{
     display: grid;               
     background: url(./assets/images/herobg.png) no-repeat center 30%;
     position: relative;
-    margin-block: 20vh;
+    /* margin-block: 20vh; */
+    margin-top:192px;
+    margin-bottom: 100px;
+
     @media screen and (width <=  1024px) {
         width: calc(100vw - 2rem);
         margin-inline: auto;
-        height: auto;
-       
+        height: auto;       
     }
     .hero{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
         text-align: center;    
         align-items: center;
         overflow: hidden;
@@ -373,7 +376,9 @@ nav.mobile__menu{
                 font-size: 3rem;
             }
         }
-    
+        p{
+            font-size: 1.3rem;
+        }
         p, h2{
             text-align: center; 
         }
@@ -408,15 +413,8 @@ nav.mobile__menu{
             padding:1rem;
             border-radius: 8px;
             border:none; 
-            width: 250px;
-            white-space: nowrap;
-            
-            /* box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-            0 12.5px 10px rgba(0, 0, 0, 0.06),
-            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-            0 100px 80px rgba(0, 0, 0, 0.12); */
+            padding: 1rem 2rem;
+            white-space: nowrap;                     
         }
     
           
@@ -495,12 +493,18 @@ nav.mobile__menu{
         background-color: white;
         background-repeat: no-repeat;        
         background-position: center;
-        outline: 1px solid rgba(0, 0, 0, 0.034);
+        /* outline: 1px solid rgba(0, 0, 0, 0.034); */
         border-radius: 8px;
         cursor: pointer;
 
-        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
-         rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        /* box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+         rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; */
+
+         
+        box-shadow: 0px 0px 16.7px 5px rgba(0, 0, 0, 0.05);
+
+
+         
 
         p{
             color: #003C65; 
@@ -631,6 +635,7 @@ nav.mobile__menu{
         background-color: var(--violet);
         p{
             color:white;
+            font-size: 2.2rem;
         }
     }   
 
@@ -935,9 +940,18 @@ nav.mobile__menu{
 
 }
 
-#footer{
+#footer__container{
+    width: 100vw;
     background-color: white;
     border-top: 1px solid #D8D8D8;
+    #footer{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+#footer{
+    
     padding-block: 2rem;
     display: flex;
     justify-content: space-around;
@@ -948,6 +962,16 @@ nav.mobile__menu{
         display: flex;
         flex-direction: column;
         gap:0.5rem;
+        color: var(--dark-gray);
+            font-size: 0.9rem;
+        a{
+            text-decoration: none;
+            color: var(--dark-gray);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
     }
 
     ul{
@@ -956,7 +980,7 @@ nav.mobile__menu{
         a{
             text-decoration: none;
             color: var(--dark-gray);
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             &:hover{
                 text-decoration: underline;
             }
@@ -965,7 +989,7 @@ nav.mobile__menu{
     }
 
     @media screen and (width <= 768px) {
-        height: 400px;
+        padding-bottom: 2rem;
         justify-content: flex-start;
     
         & > div:not(:first-child){

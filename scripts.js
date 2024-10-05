@@ -88,13 +88,13 @@ function animateLeftTiles(tile){
     gsap.from(tile, {
       scrollTrigger: {
         trigger: tile,
-        start: "top 70%",
+        start: "top 72%",
         end: "bottom 90%",
         scrub: true,        
         markers: false,
       },      
-      x: -200,
-      y: -150,     
+      x: -100,
+      y: -100,     
       opacity: 0, 
       duration: 8,
       stagger: 1,      
@@ -108,13 +108,13 @@ function animateRightTiles(tile){
   gsap.from(tile, {
     scrollTrigger: {
       trigger: tile,
-      start: "top 70%",
+      start: "top 72%",
       end: "bottom 90%",
       scrub: true,      
       markers: false,
     },    
-    x: 200,
-    y: -150,
+    x: 100,
+    y: -100,
     opacity: 0,
     duration: 8,
     stagger: 1,

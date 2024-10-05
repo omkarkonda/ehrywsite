@@ -44,7 +44,7 @@
             <li>
                 <div class="menuitem">
                     <a href="#">Product & Features</a>
-                    <i class="ri-arrow-down-s-line"></i>
+                    
                 </div>
                 <ul class="dropdown">
                     <li><a href="#">Documentation & Form Forwarding</a></li>
@@ -53,10 +53,10 @@
                     <li><a href="#">Inbox & Messaging</a></li>
                     <li><a href="#">eRx, PDMP, & eLabs</a></li>
                     <li><a href="#">Billing & Online Payments</a></li>
-                    <li><a href="#">Automated reminders & Alerts</a></li>
+                    <li><a href="#">Automated Reminders & Alerts</a></li>
                     <li><a href="#">Reporting & Compliance </a></li>
                     <li><a href="#">Telehealth</a></li>
-                    <li><a href="#">New Client Registration</a></li>
+                    <li><a href="#">New Client Registration & Client Portal</a></li>
                     <li class="product_release">
                         <a href="#"> New Product Releases</a>
                     </li>
@@ -66,29 +66,31 @@
             <li>
                 <div class="menuitem">
                     <a href="#">Customers</a>
-                    <i class="ri-arrow-down-s-line"></i>
+                    
                 </div>
                 <ul class="dropdown col1">
-                    <li><a href="#">Behavioral and Mental Health</a></li>
+                    <li><a href="#">Behavioral & Mental Health</a></li>
+                    <li><a href="#">In Patient</a></li>
                     <li><a href="#">Medical Practices</a></li>
-                    <li><a href="#">Adoption Services</a></li>
                 </ul>
             </li>
             <li>
                 <div class="menuitem">
-                    <a href="#">Our Company</a>
-                    <i class="ri-arrow-down-s-line"></i>
+                    <a href="#">Our Company</a>                  
                 </div>
+                <ul class="dropdown col1">
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Careers</a></li>
+                    
+                </ul>
             </li>
-            <li>
-                <div class="menuitem"><a href="#">Careers</a></div>
-            </li>
+            
         </ul>
 
         <div class="col2">
             <div id="search" role="search">
                 <input type="text" role="searchbox" aria-label="Search" placeholder="Search">
-                <i class="ri-search-line" role="searchicon"></i>
+                <img src="./assets/images/search.png" alt="" srcset="">
             </div>
             <button class="demo__btn">Book a Demo</button>
         </div>
@@ -104,7 +106,7 @@
             <li class="links">
                 <a href="#">Support</a>
                 <a href="#">Sign In</a>
-                <a href="#" class="demo">Request a Demo</a>
+                <a href="#" class="demo">Book a Demo</a>
             </li>
             <li>
                 <a href="#">Product & Features</a>
@@ -135,9 +137,9 @@
                 <ul class="dropdown">
                     <li><a href="#">Our Story</a></li>
                     <li><a href="#">Team</a></li>
+                    <li><a href="#">Careers</a></li>
                 </ul>
             </li>
-            <li><a href="#">Careers</a></li>
             
         </ul>
         
@@ -145,14 +147,14 @@
 
     <main id="page1">
         <div class="hero">
-            <h1>Your Forms, Your Workflow, Your Way</h1>
-            <p>Designed by clinicians for clinicians</p>
+            <h1>Your Forms. Your Workflow. Your Way.</h1>
+            <p>Designed by clinicians, for clinicians.</p>
             <h2>
                 <span class="behavioral">Behavioral Health</span>
                 <span class="inpatient">Inpatient</span>
                 <span class="medical">Medical Practices</span>
             </h2>
-            <button class="main__CTA__btn"><i class="ri-heart-fill"></i> Book a Demo</button>    
+            <button class="main__CTA__btn">Book a Demo</button>    
         </div>
         <!-- <div class="scroll__helper">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#9B9B9B"><path d="M13.0001 16.1716L18.3641 10.8076L19.7783 12.2218L12.0001 20L4.22192 12.2218L5.63614 10.8076L11.0001 16.1716V4H13.0001V16.1716Z"></path></svg>
@@ -369,52 +371,53 @@
     </section>
 
 
-    <section id="footer">
-        <div class="logo">
-            <img src="./assets/images/adaptamed_logo.png" alt="">
-            <a href="#">Terms of Services</a>
-            <a href="#">Privacy Policy</a>
-            <span>977.478.7773</span>
-            <a href="mailto:info.at.ehryourway.com">info@ehryourway.com</a>
-        </div>
-        <div class="features">
-            <h3>Product & Features</h3>
-            <ul>
-                <li><a href="#">Documentation & Form Forwarding</a></li>
-                <li><a href="#">Scheduling</a></li>
-                <li><a href="#">Workforce Management</a></li>
-                <li><a href="#">Inbox & Messaging</a></li>
-                <li><a href="#">eRx, PDMP, & eLabs</a></li>
-                <li><a href="#">Billing & Online Payments</a></li>
-                <li><a href="#">Automated Reminders & Alerts</a></li>
-                <li><a href="#">Reporting & Compliance</a></li>
-                <li><a href="#">Telehealth</a></li>
-                <li><a href="# ">New Client Registration & Client Portal</a></li>
-            </ul>
-        </div>
-        <div class="customers">
-            <h3>Customers</h3>
-            <ul>
-                <li><a href="#">Behavioral and Mental Health</a></li>                
-                <li><a href="#">Medical Practices</a></li>
-                <li><a href="#">Adoption Services</a></li>
-            </ul>
-        </div>
-        <div class="company">
-            <h3>Our Company</h3>
-            <ul>
-                <li><a href="#">Our Story</a></li>                
-                <li><a href="#">Team</a></li>                
-            </ul>
-        </div>
-        <div class="others">
-            <h3>Others</h3>
-            <ul>
-                <li><a href="#">Request a demo</a></li>                
-                <li><a href="#">Signin</a></li>                
-                <li><a href="#">Support</a></li>                
-            </ul>
-
+    <section id="footer__container">
+        <div id="footer">
+            <div class="logo">
+                <img src="./assets/images/adaptamed_logo.png" alt="">
+                <a href="#">Terms of Services</a>
+                <a href="#">Privacy Policy</a>
+                <span>977.478.7773</span>
+                <a href="mailto:info.at.ehryourway.com">info@ehryourway.com</a>
+            </div>
+            <div class="features">
+                <h3>Product & Features</h3>
+                <ul>
+                    <li><a href="#">Documentation & Form Forwarding</a></li>
+                    <li><a href="#">Scheduling</a></li>
+                    <li><a href="#">Workforce Management</a></li>
+                    <li><a href="#">Inbox & Messaging</a></li>
+                    <li><a href="#">eRx, PDMP, & eLabs</a></li>
+                    <li><a href="#">Billing & Online Payments</a></li>
+                    <li><a href="#">Automated Reminders & Alerts</a></li>
+                    <li><a href="#">Reporting & Compliance</a></li>
+                    <li><a href="#">Telehealth</a></li>
+                    <li><a href="# ">New Client Registration & Client Portal</a></li>
+                </ul>
+            </div>
+            <div class="customers">
+                <h3>Customers</h3>
+                <ul>
+                    <li><a href="#">Behavioral & Mental Health</a></li>
+                    <li><a href="#">In Patient</a></li>
+                    <li><a href="#">Medical Practices</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <h3>Our Company</h3>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </div>
+            <div class="others">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#">Request a demo</a></li>
+                    <li><a href="#">Signin</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
