@@ -1,0 +1,41 @@
+:root{
+    --dull-gray: #E6E6E6;
+    --dark-gray: #ABABAB;
+    --navy-blue: #002265;
+    --sky-blue: #257cc7;
+    --violet: #64108C;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+html, body {
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    scrollbar-width: thin;
+    background: #F8FAFB;
+    
+}
+
+body{
+    
+    overflow: hidden ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    
+}
+
