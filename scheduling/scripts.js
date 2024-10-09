@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ScrollTrigger.create({
     trigger: "#feature__hero__section",
-    start: "top 20%",
+    start: "top 10%",
     end: () => `+=${getScrollAmount() * -1}`,
     pin:true,
     scrub:3,
