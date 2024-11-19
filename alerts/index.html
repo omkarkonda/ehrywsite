@@ -17,15 +17,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <div class="topnav">
         <a href="#">Support</a>
         <a href="#">Sign In</a>
     </div>
     <nav role="banner" class="banner">
         <div class="logo">
-            <img src="../assets/images/logo.svg" alt="" >
+            <a href="../index2/index2.html">
+                <img src="../assets/images/logo.svg" alt="" >
+            </a>
         </div>
+        
         <ul role="navigation" class="dektop__menu">
             <li>
                 <div class="menuitem">
@@ -33,16 +35,16 @@
                     
                 </div>
                 <ul class="dropdown">
-                    <li><a href="#">Documentation & Form Forwarding</a></li>
+                    <li><a href="../easyforms/index.html">Documentation & Form Forwarding</a></li>
                     <li><a href="../scheduling/index.html">Scheduling</a></li>
                     <li><a href="#">Workforce Management</a></li>
                     <li><a href="../inbox/index.html">Inbox & Messaging</a></li>
                     <li><a href="#">eRx, PDMP, & eLabs</a></li>
-                    <li><a href="#">Billing & Online Payments</a></li>
-                    <li><a href="#">Automated Reminders & Alerts</a></li>
+                    <li><a href="../billing/index.html">Billing & Online Payments</a></li>
+                    <li><a href="../alerts/index.html">Automated Reminders & Alerts</a></li>
                     <li><a href="#">Reporting & Compliance </a></li>
                     <li><a href="#">Telehealth</a></li>
-                    <li><a href="#">New Client Registration & Client Portal</a></li>
+                    <li><a href="../client_portal/index.html">New Client Registration & Client Portal</a></li>
                     <li class="product_release">
                         <a href="#"> New Product Releases</a>
                     </li>
@@ -130,22 +132,17 @@
         
     </nav>
 
-   
-        
-    
-   
-
     <section class="full__bleed_Hero">
         <div class="hero_text">
             <h1>Streamline Communication with Secure Messaging</h1>
             <p>Stay connected with patients effortlessly through our secure Inbox & Messages feature. Designed for healthcare teams, it enables seamless, real-time communication, prioritizing patient privacy.</p>
             <button>Book a Demo</button>
         </div>
-        <img src="../assets/images/inbox_bg.png" alt="" srcset="">
+        <img src="../assets/images/reminders_bg.png" alt="" srcset="">
     </section>
 
 
-    <section class="short_features">
+    <!-- <section class="short_features">
         <div class="card">
             <img src="../assets/images/mail.png" alt="">
             <p>Messages</p>
@@ -179,25 +176,23 @@
             <p>Work Handover</p>
         </div>
         
-    </section>
+    </section> -->
 
     <section class="long_features">
-        <h2>Inbox and Messaging</h2>
+        <h2>Automated Reminders and Alerts</h2>
         <div class="cards__wrapper">
             <div class="cards">
                 <div class="long__card" data-card="1">
-                    <p>Send messages to internal staff, to a client’s portal and to external emails </p>
+                    <p>Create automated reminders for users based on various modules actions. Example: Notes, Documents, Program Admissions, Appointments, Demographics & Portal actions, Authorizations etc.. </p>
                     <ol>
-                        <li>Set up pre-defined message templates</li> 
-                        <li>Attach documents from both your computer and EHRYourWay </li>
-                        <li>Send messages to the client/patient portal. Clients/patients will receive an alert notification to their personal emails to review the message in the portal.  </li>
-
-                        <li>Create user groups to send bulk messages </li>
-                        <li>Send messages to external emails </li> 
-                        <li>Create automated replies </li>
-                        <li>Send bulk messages to multiple clients at a time </li>
-                        <li>Set up visibility permissions for users’ inboxes </li>
-
+                       <li>View all automated reminders for all your clients in a single reminders window</li>
+                       <li>Filter reminders in this window by date</li>
+                       <li>Mark reminders as completed in this window</li>
+                       <li>Export reminder dues from this window</li>
+                       <li>Give selected users or roles access to reminders</li>
+                       <li>Turn reminders off manually or automatically</li>
+                       <li>Block the documentation of notes based on reminder conditions</li>
+                       <li>Release the block automatically once specified conditions are met</li>
                     </ol>
                 </div>
                 <div class="long__card" data-card="2">
@@ -209,105 +204,12 @@
                         <li>Annotate your notes with comments </li>
                         <li>Print/pdf/fax/email notes</li>
                     </ol>
-                </div>
-                <div class="long__card" data-card="3">
-                    <p>Review notes that have been completed and forwarded to you by your supervises and, directly from your Inbox</p>
-                    <ol>
-                        <li>Access the client/patient chart directly </li>
-                        <li>Edit and sign off on notes</li>
-                        <li>Bulk sign off on notes </li>
-                        <li>Print/pdf/fax/email notes </li>
-                        <li>Add form-level or field-level comments to notes and revert the notes back to the Supervisee for corrections</li>
-                    </ol>
-                </div>
-                <div class="long__card" data-card="4">
-                    <p>View New Client Registration requests submitted from your practice’s website</p>
-                    <ol>                 
-                        <li>Accept or decline the referral directly from your Inbox </li>
-                       <li> Upon accepting or declining, the client will get an automated email notification.  </li>
-                       <li> Create email templates for these email notifications  </li>
-                       <li> Add comments to each referral record</li>
-                       <li> Filter referrals based on status (pending, approved, declined)  </li>
-                       <li> Export referrals information to excel </li>
-                       <li> Preview the referral information entered by the new client and print/pdf it  </li>
-                       <li> View a log of actions performed on referral records  </li>
-                       <li> For approved referrals, automate chart creation for the client – Upon accepting the referral, demographic information provided in the new client </li>
-                       <li>registration form will automatically be loaded into the newly created chart  </li>
-                    </ol>
-                    
-                    <strong>Color-code appointments based on:</strong>
-                    <p>
-                    Service,
-                    Appointment status,
-                    Encounter modality,
-                    Health plan and
-                    Location
-                </p>
-
-                </div>
-                <div class="long__card" data-card="5">
-                    <p>View notes forwarded by other users</p>
-                    <ol>
-                        <li>Print/pdf/fax/email notes</li>                        
-                    </ol>
-                    
-                </div>
-                <div class="long__card" data-card="6">
-                    <p>View forms completed and documents uploaded by the client/patient in the client/patient portal</p>
-
-                    <ol>
-                        <li>Open the client’s chart </li>
-                        <li>Add comments to the documents </li>
-                        <li>Download documents </li>
-                        <li>Send a message to the client’s portal inbox </li>
-                        <li>Index documents to the required document category </li>
-                        <li>Delete and split documents </li>
-                        <li>Sign off on documents individually or in bulk  </li>
-                        <li>Set permissions for who can see forms </li>
-                        <li>Bulk sign off on forms </li>
-                        <li>Print/pdf/fax/email forms</li>
-                   </ol>
-                  
-               
-
-                    <!-- Upon check-in, perform various actions within the appointment window, including:
-                    Real-time eligibility check
-                    Viewing and collecting any outstanding patient balances, including co-pay for the visit
-                    Automate payment collection for appointments -->
-
-                </div>
-                <div class="long__card" data-card="7">
-                    <p>View and accept or decline appointment requests submitted by clients/patients from the client/patient portal</p>
-                    <ol>
-                       <li>Preview the patient’s demographic and insurance information </li>
-                       <li>Add accepted appointments directly to the provider’s schedule from your Inbox </li>
-                       <li>Send SMS messages to the client  </li>
-                       <li>Filter appointment requests by status – Pending, Approved, Declined </li>
-                       <li>Open the client’s chart </li>
-                    </ol>                    
-                </div>
-                <div class="long__card" data-card="8">
-                    <p>Review notes handed over to you by other supervisors who are on vacation. Customize the vacations for the supervisors. </p>
-                    <ol>
-                        <li>Open the client’s chart</li>
-                        <li>Edit and sign off notes</li>
-                        <li>Bulk sign off notes</li>
-                        <li>Print/Pdf/Fax/Email notes</li>
-                        <li>Add comments to notes</li>
-                    </ol>                    
-                </div>                
+                </div>                            
             </div>
         </div>
         <ul id="menu">
-            <li data-menu-id="1">Messages</li>
-            <li data-menu-id="2">My Unsigned Forms</li>
-            <li data-menu-id="3">Review Forms</li>
-            <li data-menu-id="4">New Client Registrations</li>
-            <li data-menu-id="5">FYI Notes</li>
-            <li data-menu-id="6">Portal Documents </li>
-            <li data-menu-id="7">Appointment Requests from Portal </li>
-            <li data-menu-id="8">Work Handover Notes </li>
-                  
+            <li data-menu-id="1">Reminders</li>
+            <li data-menu-id="2">Alerts</li>       
         </ul>
     </section>
    
