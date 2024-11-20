@@ -23,19 +23,33 @@ input, button, textarea, select {
 html, body {
     
     font-size: 16px;
-    scrollbar-width: thin;
+    
     background: #F8FAFB;
     
 }
 
-body{
-    
-    overflow: hidden ;
+body{    
     font-family: "Manrope", sans-serif;
 }
+
+/* body>div, body>section{
+    outline: 2px solid red;
+} */
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: 800;
     
 }
 
+html.lenis {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
