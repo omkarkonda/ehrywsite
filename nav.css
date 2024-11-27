@@ -15,8 +15,7 @@
     color: var(--navy-blue);
     font-weight: 500;    
     margin-right: 18px;
-    font-size: 0.7rem;
-    
+    font-size: 0.7rem;    
     padding-block: 5px;
     
 }
@@ -36,7 +35,7 @@ nav.banner{
     }
     
     
-    ul.dektop__menu {
+    ul.desktop__menu {
         display: flex;
         list-style: none;
         margin-inline: auto;
@@ -223,7 +222,9 @@ nav.banner{
 
 
 
-.topnav, nav.banner ul.dektop__menu, nav .col2{
+.topnav, 
+nav.banner ul.desktop__menu, 
+nav.banner .col2{
     @media screen and (width <=  1024px) {
         display: none;        
     }
