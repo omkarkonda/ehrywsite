@@ -1,0 +1,37 @@
+.jobdescription{
+
+    max-width: min(80ch, calc(100% - 2rem));
+    margin-inline: auto;
+    margin-top: 108px;
+    padding-bottom: 3vh;
+    ul{
+        list-style: none;
+        margin-left: 0.5rem;
+        li{
+            margin-bottom: 0.3rem;
+        }
+    }
+
+    h1{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        line-height: 1.1;
+        + span{
+            display: block;
+        }
+    }
+        
+    h2:has(+ p), h2:has(+ ul){
+        margin-block: 1rem;
+        font-weight: 500;
+        text-decoration: wavy underline;
+        text-decoration-color: rgba(0, 0, 0, 0.2);
+        color:  rgba(0, 0, 0, 0.7);
+        text-decoration-thickness: 1px;
+
+    }
+
+
+
+}

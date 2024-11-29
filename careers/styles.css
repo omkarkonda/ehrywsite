@@ -1,0 +1,181 @@
+#careersHeroSection {
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 10vh;
+    /* max-height: 100vh;
+    overflow-y: hidden; */
+    video{
+        min-width: 100%;                   
+        filter: brightness(0.5);
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        outline: 1px solid red;
+    }
+
+    h1{
+        font-size:6rem;
+        color: #FFF;
+        text-align: center;                
+        font-weight: 800;        
+        line-height: 5;
+        letter-spacing: -0.72px;               
+        text-shadow: 5px 5px 50px #000 ;
+        text-transform: uppercase;
+        background: transparent; 
+        z-index: 2;
+
+        /* outline: 2px solid red; */        
+    }
+
+    .content{
+        min-height: 1200px;
+        z-index: 2;
+        background-color: #FFF;        
+        inset: 0;
+        .intro{
+            max-width: min(1200px, calc(100% - 2rem));
+            margin-inline: auto;
+            margin-top:5vh;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            p{
+                max-width: 50ch;
+                margin-inline: auto;
+                color: #000;
+                text-align: center;
+                font-family: Manrope;
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 150%; /* 24px */
+                
+                > b:first-child{
+                    color: var(--violet);
+                
+                }
+                
+                > b:nth-child(2){
+                    color: var(--sky-blue);
+                    
+                
+                }
+                
+                > b:last-child{
+                    color: var(--navy-blue);
+                    
+                
+                }
+
+            }
+            h2.open_jobs{
+                
+                color: var(--navy-blue);
+                
+                padding: 1rem;
+                border-radius: 8px;
+                border: none;
+                padding: 1rem 2rem;
+                white-space: nowrap;
+                max-width: 400px;
+                margin: 1rem auto;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 2rem;
+                text-align: center;
+                letter-spacing: 3px;
+            }
+
+            ul.team{
+                display: flex;
+                /* outline: 2px solid red; */
+                margin: 2rem auto;
+                gap: 1rem;
+                li{      
+                    display: flex;          
+                    flex-direction: column;    
+                    justify-content: flex-start;                    
+                    align-items: center;
+                    list-style: none;
+                    height: 400px;
+                    width: 200px;                    
+                    border-radius: 999px;
+                    background-color:aliceblue;   
+                    gap: 2.5rem;
+                    overflow: hidden;                 
+                    span{
+                       color: var(--violet);
+                       letter-spacing: 1px;
+                    }
+                    img{
+                        border-radius: 999px;
+                        filter: grayscale(1);
+                        transition: all 0.5s ease;
+                        &:hover{
+                            filter: grayscale(0);                            
+                        }
+                    }
+                }
+
+                li:nth-child(2), li:nth-child(4){
+                    margin-top:100px;
+                    background-color: cornsilk;
+                    
+                }
+            }
+
+        }
+
+    }
+
+    .openings{
+        max-width: min(1200px, calc(100% - 2rem));
+        margin-inline: auto;
+        margin-top:5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        ul.positions{
+            column-count: 4;             
+            column-rule: rgba(0, 0, 0, 0.1) 1px solid;
+            li{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 0.3rem;                                
+                a{
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.7);
+
+                    &:hover{
+                        color: var(--navy-blue);
+                    }
+                }
+
+                h3{
+                    color: var(--sky-blue);                    
+                    font-family: Manrope;
+                    font-size: 1.2rem;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 150%; /* 24px */
+                    break-before: avoid;
+                    break-after: avoid;
+                    margin-block: 0.5rem;
+                }
+                p{
+                    color: #000;
+                    font-family: Manrope;
+                    font-size: 1rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 150%; /* 24px */
+                }
+            }
+        }
+    }
+}
