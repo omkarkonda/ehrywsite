@@ -1,9 +1,12 @@
 .jobdescription{
-
+    background-color: white;
+    padding: 2rem;
     max-width: min(80ch, calc(100% - 2rem));
     margin-inline: auto;
     margin-top: 108px;
-    padding-bottom: 3vh;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     ul{
         list-style: none;
         margin-left: 0.5rem;
