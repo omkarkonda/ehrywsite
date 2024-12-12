@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../nav.css">
     <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../features.css">
 </head>
 <body>
 
@@ -43,8 +43,8 @@
                     <li><a href="../billing/index.html">Billing & Online Payments</a></li>
                     <li><a href="../alerts/index.html">Automated Reminders & Alerts</a></li>
                     <li><a href="#">Reporting & Compliance</a></li>
-                    <li><a href="#">Telehealth</a></li>
-                    <li><a href="../client_portal/index.html">New Client Registration & Client Portal</a></li>
+                    <li><a href="#">New Client Registration</a></li>
+                    <li><a href="../client_portal/index.html">Client Portal</a></li>
                     <li class="product_release">
                         <a href="#"> New Product Releases</a>
                     </li>
@@ -139,7 +139,7 @@
 
     <section class="full__bleed_Hero">
         <div class="hero_text">
-            <h1>Experience Effortless Appointment Scheduling</h1>
+            <h1>Streamlined Scheduling for Complete Workflow Management </h1>
             <p>Our end-to-end scheduling module allows you to generate and manage schedules, book a variety of appointment types, and easily complete your entire workflow from one window.</p>
             <button>Book a Demo</button>
         </div>
@@ -185,137 +185,107 @@
 
     <section class="long_features">
         <h2>Streamline Your Appointment Scheduling with Ease</h2>
-        <div class="cards__wrapper">
-            <div class="cards">
-                <div class="long__card" data-card="1">
-                    <ol>
-                        <li>Generate an appointment scheduler for each of your providers based on their working hours and availability.</li>
-                        <li>Specify appointment slots by visit type, encounter modality, and duration.</li>
-                        <li>Specify individual vs. recurring and one-on-one vs. group appointment slots and schedules.</li>
-                    </ol>
-                </div>
-                <div class="long__card" data-card="2">
-                    <ol>
-                    <li>Schedule individual and recurring appointments.</li>
-                    <li>Schedule one-on-one and and group appointments.</li>
-                    <li>Give appointments by room and link the room to the provider to avoid double-booking a room</li>
-                    <li>Set the “bill to” party to ensure accurate and timely revenue collection</li>
-                    <li>Link the appointment to patient insurance details, including eligibility status and co-pay, for easy information access and co-pay collection later on</li>
-                    <li>Easily link the appointment to the co-pay amount for the CPT code of the service being provided in the appointment </li>               
-                </ol>
-                </div>
-                <div class="long__card" data-card="3">
-                    <ol>
-                        <li>Schedule virtual appointments and have an automated Zoom, Google or Teams meeting link be linked to the appointment and sent to the client via email and SMS</li>
-                    </ol>
-                </div>
-                <div class="long__card" data-card="4">
-                    <ol>                 
-                        <li>View for multiple providers at a time or an individual provider</li>
-                        <li>View by day, week, or month</li>
-                        <li>Filter by location, service, insurance, provider, and availability</li>
-                    </ol>
-                    
-                    <strong>Color-code appointments based on:</strong>
-                    <p>
-                    Service,
-                    Appointment status,
-                    Encounter modality,
-                    Health plan and
-                    Location
-                </p>
+        <div class="features__container">
+            <div class="cards__wrapper">
+                <div class="cards">                    
+                    <div class="long__card" data-card="1">
+                        <ol>
+                            <li><p><b>Dynamic Scheduler Creation:</b> Generate tailored appointment schedules for providers based on their working hours and availability.</p></li>
+                            <li><p><b>Custom Slot Specifications:</b> Define appointment slots by visit type, modality, and duration for flexible scheduling.</p></li>
+                            <li><p><b>Comprehensive Appointment Types:</b> Specify individual, recurring, one-on-one, and group appointment slots and schedules.</p></li>
+                        </ol>
+                    </div>
+                    <div class="long__card" data-card="2">
+                        <ol>
+                            <li><p><b>Flexible Appointment Scheduling:</b> Schedule individual, recurring, one-on-one, and group appointments with ease.</p></li>
+                            <li><p><b>Integrated Room Management:</b> Give appointments by room and link the room to the provider to avoid rooms getting double-booked.</p></li>
+                            <li><p><b>Automated Meeting Links:</b> Schedule virtual appointments with automatic integration of Zoom, Google Meet, or Teams links sent via email and SMS.</p></li>
+                        </ol>
+                    </div>
+                    <div class="long__card" data-card="3">
+                        <ol>
+                            <li><p><b>Customizable Billing Fields:</b> Display specific billing-related fields in the appointments window and limit access to authorized users or roles for enhanced control. </p></li>
+                            <li><p><b>Comprehensive Billing Details:</b> View copays, eligibility, and insurance information within the appointment for efficient copay collection and updates during the visit. </p></li>
+                            <li><p><b>Billing Party Linkage:</b> Automatically link appointments to the "bill to" party (insurance or client, if client is specified to be self-pay). </p></li>
+                            <li><p><b>Insurance and Copay Linkage:</b> Automatically link appointments to client insurance details and co-pay amounts for streamlined collections. </p></li>
+                            <li><p><b>Service-Specific Copay Integration:</b> Link appointments to the copay amount for the CPT code of the service documented in the appointment. </p></li>
+                        </ol>
+                    </div>
+                    <div class="long__card" data-card="4">
+                        <ol>
+                            <li><p><b>Multiple Viewing Options:</b> View schedules for multiple providers simultaneously or focus on individual providers.</p></li>
+                            <li><p><b>Flexible Timeframes:</b> Display appointments by day, week, or month.</p></li>
+                            <li><p><b>Advanced Filters:</b> Filter schedules by location, service, insurance, provider, and availability.</p></li>
+                            <li><p><b>Color-Coded Insights:</b> Distinguish appointments by service, status, encounter modality, health plan, or location for better visual organization.</p></li>
+                        </ol>
 
-                </div>
-                <div class="long__card" data-card="5">
-                    <ol>
-                        <li>Send automated appointment reminders via email, SMS or voice calls based on the client’s preference</li>
-                    </ol>
-                    
-                </div>
-                <div class="long__card" data-card="6">
-                    <ol>
-                        <li>From the appointment window, update appointment status, perform eligibility, collect patient balance due, launch telehealth visit, open patient chart and document notes</li>
-                        <li>Track appointment statuses (Pending, Check In, Check Out, Cancelled, Missed, Rescheduled, Delete)</li>
-                        <li>Bill patients for appointments that are missed or cancelled by patients  </li>
-                        <li>
-                            Customize what you view within the appointment window by user or role within your practice,
-                            <strong>Including:</strong>    
-                            Eligibility status, 
-                            Insurance information,
-                            Co-pay information and
-                            Pre-authorization details
-                        </li>
+                    </div>
+                    <div class="long__card" data-card="5">
+                        <ol>
+                            <li><p><b>Multichannel Notifications:</b> Send automated appointment reminders via email, SMS, or voice calls based on client preferences.</p> </li>
+                        </ol>
                         
-                   </ol>
-                  
-               
+                    </div>
+                    <div class="long__card" data-card="6">
+                        <ol>
+                            <li><p><b>One-Stop-Shop:</b> Update appointment status, perform eligibility checks, collect balances, launch telehealth visits, and open client charts to document notes—all from the appointment window.</p></li>
+                            <li><p><b>Appointment Status:</b> Track appointments as Pending, Checked In, Checked Out, Cancelled, Missed, Rescheduled, or Deleted.</p></li>
+                            <li><p><b>Streamlined Check-In Actions:</b> Perform real-time eligibility checks, view and collect outstanding balances, and automate payment collection during check-in.</p></li>
+                            <li><p><b>Missed and Cancelled Billing:</b> Automate billing for missed or cancelled appointments.</p></li>
+                            <li><p><b>Customizable Appointment Views:</b> Tailor the appointment window display by user or role to include eligibility status, insurance details, co-pay amounts, and pre-authorization requirements.</p></li>
+                        </ol>
 
-                    <!-- Upon check-in, perform various actions within the appointment window, including:
-                    Real-time eligibility check
-                    Viewing and collecting any outstanding patient balances, including co-pay for the visit
-                    Automate payment collection for appointments -->
-
-                </div>
-                <div class="long__card" data-card="7">
-                    <ol>
-                        <li>Clients can request an appointment</li>
-                        <li>
-                            Clients schedule an appointment directly within the client portal
-                        </li>
-                        <li>
-                            Providers can specify which portion of their schedule can be made available for client self-scheduling within
-                            the client portal
-                        </li>
-                    </ol>
-                    
-                    
-                    
-                </div>
-                <div class="long__card" data-card="8">
-                    <ol>
-                        <li>Add clients to a waitlist with their preferred appointment date and time until the required provider(s) have a slot available. </li>
-                        <li>
-                            Easily move clients off the waitlist once the provider(s) has an opening by directly assigning the provider and appointment slot to the next person on the waitlist for this provider from the appointment window itself.
+                    </div>
+                    <div class="long__card" data-card="7">
+                        <ol>
+                            <li><p><b>Request Appointments:</b> Allow clients to request appointments through the portal.</p></li>
+                            <li><p><b>Direct Scheduling:</b> Enable clients to schedule appointments directly within the portal.</p></li>
+                            <li><p><b>Provider Availability Management:</b> Let providers control which portions of their schedules are available for self-scheduling.</p></li>
+                        </ol>
                         
-                        </li>
-                        
-                    </ol>
+                    </div>
+                    <div class="long__card" data-card="8">
+                        <ol>
+                            <li>
+                                <p><b>Efficient Waitlist Handling:</b> Add clients to a waitlist with their preferred date and time until a
+                                    provider has availability. </p>
                     
-
+                            </li>
+                            <li>
+                                <p><b>Seamless Waitlist Integration:</b> Directly assign open slots to waitlisted clients from the
+                                    appointment window. </p>
+                            </li>
+                        </ol>
                     
-                    
-                </div>
-                <div class="long__card" data-card="9">
-                    <ol>
-                        <li>
-                            Appointments scheduled in EHRYW can be viewed on your Google calendar or Microsoft Outlook Calendar.
-                        </li>                                            
-                    </ol>                    
-                </div>
-                <div class="long__card" data-card="10">
-                    <ol>
-                        <li>
-                            Have clients enrolled in a multi-day, multi-hour IOP program with a single scheduling event.
-                        </li>                                            
-                        <li>
-                            Scheduler will track check-in and check-out time and automatically bill for these per diem encounters.
-                        </li>
-                    </ol>                    
+                    </div>
+                    <div class="long__card" data-card="9">
+                        <ol>
+                            <li>
+                                <p><b>Google and Outlook Sync:</b> View EHRYW appointments directly on Google Calendar or Microsoft Outlook for seamless scheduling. </p>
+                            </li>                                            
+                        </ol>                    
+                    </div>
+                    <div class="long__card" data-card="10">
+                        <ol>
+                            <li><p><b>Single Scheduling Event:</b> Schedule multi-day, multi-hour IOP programs with one simple scheduling event.</p></li>
+                            <li><p><b>Per Diem Billing Integration:</b> Automatically track check-in and check-out times for accurate per diem billing.</p></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
-        </div>
-        <ul id="menu">
-            <li data-menu-id="1">Appointment Scheduler Generation</li>
-            <li data-menu-id="2">Appointment and Room Scheduling</li>
-            <li data-menu-id="3">Telehealth</li>
-            <li data-menu-id="4">Multiple Schedule View and Customization Options</li>
-            <li data-menu-id="5">Automated Appointment Reminders</li>
-            <li data-menu-id="6">End-to-End Workflow Management</li>
-            <li data-menu-id="7">Client Self-Scheduling</li>            
-            <li data-menu-id="8">Waitlist Management</li>            
-            <li data-menu-id="9">Syncing with Google and Microsoft Outlook Calendars</li>            
-            <li data-menu-id="10">Intensive Outpatient Program scheduler</li>            
-        </ul>
+            <ul id="menu">
+                <li data-menu-id="1">Provider-Specific Scheduler Generation </li>
+                <li data-menu-id="2">Appointment and Room Scheduling </li>
+                <li data-menu-id="3">Simplified Billing Integration </li>
+                <li data-menu-id="4">Customizable Scheduler Views </li>
+                <li data-menu-id="5">Automated Appointment Reminders </li>
+                <li data-menu-id="6">End-to-End Workflow Management </li>
+                <li data-menu-id="7">Client Self-Scheduling  </li>
+                <li data-menu-id="8">Waitlist Management  </li>
+                <li data-menu-id="9">Calendar Syncing </li>
+                <li data-menu-id="10">Intensive Outpatient Program (IOP) Scheduler</li>            
+            </ul>
+    </div>
     </section>
    
 

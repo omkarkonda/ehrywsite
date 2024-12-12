@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../nav.css">
     <link rel="stylesheet" href="../footer.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../features.css">
 </head>
 <body>
     <div class="topnav">
@@ -42,8 +42,8 @@
                     <li><a href="../billing/index.html">Billing & Online Payments</a></li>
                     <li><a href="../alerts/index.html">Automated Reminders & Alerts</a></li>
                     <li><a href="#">Reporting & Compliance </a></li>
-                    <li><a href="#">Telehealth</a></li>
-                    <li><a href="../client_portal/index.html">New Client Registration & Client Portal</a></li>
+                    <li><a href="#">New Client Registration </a></li>
+                    <li><a href="../client_portal/index.html">Client Portal</a></li>
                     <li class="product_release">
                         <a href="#"> New Product Releases</a>
                     </li>
@@ -181,89 +181,84 @@
 
     <section class="long_features">
         <h2>Client Portal</h2>
-        <div class="cards__wrapper">
-            <div class="cards">
-                <div class="long__card" data-card="1">
-                    <ol>
-                        <li>Lower front-office burden by allowing clients to book appointments directly through the portal, fully integrated with your providers’ schedules, or request appointments if your workflow requires.  </li>
-                        <li>Clients can easily book or request appointments by selecting the desired service, modality, facility, and provider, which generates a filtered list of available days and times for seamless selection.   </li>
-                        <li>Key appointment details, such as date, time, location or telehealth link, provider, program, and service, are prominently displayed on the portal homepage for easy client access.  </li>
-                        <li>Clients can view both their upcoming appointments and their appointment history with complete details for better transparency and organization.  </li>
-                        <li>Simplify telehealth workflows by displaying virtual appointment links directly on the portal, eliminating the need to send individual Zoom, Teams, or Google Meet links.</li>
-                        <li>Clients can securely access their telehealth links from the portal homepage for quick and convenient virtual appointment access. </li>                        
-                    </ol>
+        <div class="features__container">
+            <div class="cards__wrapper">
+                <div class="cards">
+                    
+                    <div class="long__card" data-card="1">
+                        <ol>
+                            <li><p><b>Client-Driven Booking:</b> Clients can book or request appointments directly through the portal, integrated with provider schedules, reducing front-office workload.</p></li>
+                            <li><p><b>Seamless Scheduling:</b> Clients can select a service, modality, facility, and provider to generate a filtered list of available days and times for easy booking.</p></li>
+                            <li><p><b>Prominent Appointment Details:</b> Display key details, including date, time, location, telehealth link, provider, program, and service, on the portal homepage for quick access.</p></li>
+                            <li><p><b>Appointment History:</b> Clients can view both upcoming and past appointments.</p></li>
+                            <li><p><b>Simplified Telehealth Access:</b> Provide virtual appointment links directly on the portal homepage, eliminating the need for separate email or text communications.</p></li>
+                        </ol>
+                    </div>                            
+                    <div class="long__card" data-card="2">
+                        <ol>
+                            <li><p><b>Secure Communication:</b> Streamline client, provider, and staff messaging via a secure portal interface.</p></li>
+                            <li><p><b>Unread Message Highlights:</b> Recent unread messages are bolded and displayed prominently on the homepage.</p></li>
+                            <li><p><b>Convenient Messaging:</b> Clients can send new messages directly from the homepage with minimal clicks.</p></li>
+                            <li><p><b>Organized Messaging Interface:</b> Inbox, sent, and trash folders allow for efficient message organization.</p></li>
+                            <li><p><b>Inbox Management:</b> Clients can multi-select and delete messages to maintain an organized inbox.</p></li>
+                            <li><p><b>Threaded Conversation View:</b> Back-and-forth messaging is displayed in a continuous thread for easy context and continuity.</p></li>
+                        </ol>
+                    </div>                            
+                    <div class="long__card" data-card="3">
+                        <ol>
+                            <li><p><b>Transparent Balances:</b> Client balances due are prominently displayed on the homepage to encourage timely payments.</p></li>
+                            <li><p><b>Quick Payment Options:</b> Buttons for paying bills and viewing statements are readily available on the homepage for convenience.</p></li>
+                            <li><p><b>Flexible Payment Methods:</b> Clients can pay via credit card or ACH, with secure storage of payment information for future use.</p></li>
+                            <li><p><b>Default Payment Method:</b> Clients can designate a preferred payment method for added ease and efficiency. </p></li>
+                            <li><p><b>Auto-Pay Enrollment:</b> Enable clients to opt into auto-pay for consistent, timely balance collection.</p></li>
+                        </ol>
+                    </div>                            
+                    <div class="long__card" data-card="4">
+                        <ol>
+                            <li><p><b>Digital Form Management:</b> Streamline documentation by collecting and managing client forms digitally.</p></li>
+                            <li><p><b>Flexible Uploads:</b> Upload various forms, including intake forms, credit card authorizations, questionnaires, and consent forms.</p></li>
+                            <li><p><b>Automated Uploads:</b> Automatically upload forms based on trigger events, such as new client chart creation or recurring dates.</p></li>
+                            <li><p><b>E-Signature Integration:</b> Allow clients to securely sign and submit forms electronically through the portal.</p></li>
+                        </ol>
+                    </div>                            
+                    <div class="long__card" data-card="5">
+                        <ol>
+                            <li><p><b>Secure Sharing:</b> Facilitate two-way document sharing between clients and your practice.</p></li>
+                            <li><p><b>Versatile Document Management:</b> Clients and practices can upload and store essential documents such as insurance cards, medical records, visit notes, and more for secure access.</p></li>
+                        </ol>
+                    </div>                            
+                    <div class="long__card" data-card="6">
+                        <ol>
+                            <li><p><b>Medication Documentation:</b> Clients can document their medications within the portal, giving providers full visibility for more informed care.</p></li>
+                            <li><p><b>Streamlined Refill Requests:</b> Clients can request prescription refills through the portal, reducing phone calls and speeding up processing.</p></li>
+                        </ol>
+                    </div>                            
+                    <div class="long__card" data-card="7">
+                        <ol>
+                            <li><p><b>Insurance Management:</b> Clients can edit insurance details within the portal, with updates syncing to the client’s EHRYW chart.</p></li>
+                            <li><p><b>Personal Information Updates:</b> Clients can update their personal details, seamlessly linking changes to their EHRYW chart for accurate records.</p></li>
+                            <li><p><b>Preference Management:</b> Clients can save preferred office locations, pharmacies, labs, and imaging facilities for convenience.</p></li>
+                        </ol>
+                    </div>
+                    <div class="long__card" data-card="8">                      
+                        <ol>
+                            <li><p><b>Lab and Imaging Orders:</b> Clients can view provider-placed lab or imaging orders directly through the portal.</p></li>
+                            <li><p><b>Results Access:</b> Provide lab and imaging results for clients to review in the portal, ensuring timely and transparent information sharing.</p></li>
+                        </ol>                        
+                    </div>                 
                 </div>
-                <div class="long__card" data-card="2">
-                    <ol>
-                        <li>Streamline communication between clients, providers, and staff with secure messaging directly through the portal.  </li>
-                        <li> Most recent messages, with unread messages clearly highlighted in bold, are easily accessible on the client’s portal homepage. </li>
-                        <li>Clients can send new messages directly from the portal homepage, minimizing clicks and enhancing convenience.  </li>
-                        <li>The messaging interface includes inbox, sent, and trash folders to help clients efficiently organize their messages.  </li>
-                        <li>Clients can multi-select and delete messages to maintain a tidy and manageable inbox.  </li>
-                        <!-- <li>Messaging threads display back-and-forth conversations in a seamless, threaded view for easy continuity and visibility of full conversations.  </li>                         -->
-                    </ol>
-                </div>                            
-                <div class="long__card" data-card="3">
-                    <ol>
-                        <li>Client balances due are prominently displayed on the homepage, making it easy for clients to see and resolve outstanding amounts.  </li>
-                        <li>Buttons to pay bills and view statements are readily available on the homepage, enabling clients to quickly review and pay amounts owed, accelerating patient balance collection for your practice. </li>
-                        <li>Clients can make payments via credit card or ACH, with the option to securely save payment information for faster transactions in the future. </li>
-                        <li>Clients can designate a default payment method, whether a credit card or bank account, for added convenience.  </li>
-                        <li>Clients can opt to set up auto-pay, ensuring timely and consistent collection of patient balances.  </li>
-                        <li> </li>                        
-                    </ol>
-                </div>                            
-                <div class="long__card" data-card="4">
-                    <ol>
-                        <li>Collect and manage patient forms digitally to reduce overhead and streamline documentation workflows.  </li>
-                        <li>Upload any variety or number of forms to the portal, including intake forms, credit card authorizations, questionnaires, surveys, and consent forms.  </li>
-                        <li>Choose between manually uploading forms or enabling automated uploads to the portal for forms you need clients to complete.  </li>
-                        <li>Set up automated form uploads based on specific trigger events, such as the creation of a new client chart, a designated date, or a recurring frequency.  </li>
-                        <li>Enable clients to securely sign and submit forms through the portal with built-in e-signature capabilities.  </li>
-                                    
-                    </ol>
-                </div>                            
-                <div class="long__card" data-card="5">
-                    <ol>
-                        <li>Enable secure two-way document sharing between clients and your practice through the portal.  </li>
-                        <li>Clients and practices can upload and store a variety of documents for easy sharing and access, including insurance card images, medical records, visit notes, and other essential documents.  </li>
-                        
-                    </ol>
-                </div>                            
-                <div class="long__card" data-card="6">
-                    <ol>
-                        <li>Clients can document all their medications within the portal, giving providers full visibility for more informed care.  </li>
-                        <li>Clients can request prescription refills through the portal, avoiding time-consuming phone calls and increasing the efficiency and speed of prescription refill processing by your staff.  </li>
-                        
-                    </ol>
-                </div>                            
-                <div class="long__card" data-card="7">
-                    <ol>
-                        <li>Insurance details are prominently displayed on the homepage, synced with the client's insurance information saved in EHRYW, and editable by the client – The high visibility encourages regular review and updating as needed to minimize billing disruptions.  </li>
-                        <li>Clients can update their personal details within the portal, with changes seamlessly linked to their chart in EHRYW for accurate record maintenance.  </li>
-                        <li>Clients can save and manage their preferred office location, pharmacy, lab facility, and x-ray facility for added convenience and customization.  </li>                                           
-                    </ol>
-                </div>                            
-                <div class="long__card" data-card="8">
-                    <ol>
-                        <li>Clients can view provider-placed orders for labs or imaging directly within the portal.  </li>
-                        <li>Lab and imaging results are available in the portal for clients to access and review, ensuring transparency and minimizing delays in sharing critical information.  </li>
-                                                
-                    </ol>
-                </div>                            
-                                         
             </div>
+            <ul id="menu">
+                <li data-menu-id="1">View and Schedule Appointments  </li>
+                <li data-menu-id="2">View and Send Messages  </li>       
+                <li data-menu-id="3">View and Pay Bills </li>       
+                <li data-menu-id="4">View and Complete Forms </li>       
+                <li data-menu-id="5">View and Upload Documents </li>       
+                <li data-menu-id="6">Current Medications and Rx Refill Requests </li>       
+                <li data-menu-id="7">Insurance, Personal, and Preference Details </li>                   
+                <li data-menu-id="8">View Orders and Results </li>       
+            </ul>
         </div>
-        <ul id="menu">
-            <li data-menu-id="1">View and Schedule Appointments  </li>
-            <li data-menu-id="2">View and Send Messages  </li>       
-            <li data-menu-id="3">View and Pay Bills </li>       
-            <li data-menu-id="4">View and Complete Forms </li>       
-            <li data-menu-id="5">View and Upload Documents </li>       
-            <li data-menu-id="6">Current Medications and Rx Refill Requests </li>       
-            <li data-menu-id="7">Insurance, Personal, and Preference Details </li>                   
-            <li data-menu-id="8">View Orders and Results </li>       
-        </ul>
     </section>
    
 
