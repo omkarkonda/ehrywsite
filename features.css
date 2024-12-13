@@ -251,23 +251,14 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
             }
         }
 
-        ul{
-            
-            list-style-type: none;
-            margin-bottom:1rem;
-            li{
-                margin-bottom: 0.25rem;
-            }
-
-            li:before{
-                content: "->  "
-            }
-        }
+      
 
         h4{
             font-weight: 300;
             font-size: 1.5rem;
-            color:#002265;            
+            color:#002265;   
+            text-align: center;
+            margin-block: 2rem;
         }
 
         h4:has(+ p),h4:has(+ ul){
@@ -275,16 +266,90 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
            max-width: 50ch;
         }
 
-        .formsList > ul{
-            columns: 200px 4;
-            li:has(> b){
-                margin-block: 0.5rem;
+        .formsList  ol{
+           
+            list-style: none;
+
+            & > li{
+                border: 1px solid #68686825;
+                border-left-width: 0;
+                border-right-width: 0;
+                border-top-width: 0;                               
+                padding: 16px 24px;
+                cursor: pointer;              
+                ul{
+                    display: none;
+                    transition: all 0.3sec ease-in;
+                }
             }
-            li:not(:has(> b)){
-                position: relative;
-                margin-left: 30px;
+
+            
+
+            & > li.active{
+                border: 1px solid var(--violet);
+                border-radius: 12px;
+                padding: 32px;   
+                background-color:aliceblue;
+                box-shadow: 0px 8px 15px 0px rgba(100, 16, 140, 0.15), 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+                .header{
+                    margin-bottom: 16px;
+                }
+                .header strong{
+                    color: var(--violet);
+                    font-weight: 600;
+                    font-size: 1.8rem;
+                }
+                ul{
+                    display: block;
+                    columns: 3;
+                    opacity: 1;
+                    list-style: none;
+                    li{
+                        margin-bottom: 0.5rem;
+                        position: relative;
+                        margin-left: 30px;
+                    }
+                 
+                    li:before{
+                        content: " ";
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(199,199,199,1)'%3E%3Cpath d='M17 2V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H7V2H17ZM7 6H5V20H19V6H17V8H7V6ZM9 16V18H7V16H9ZM9 13V15H7V13H9ZM9 10V12H7V10H9ZM15 4H9V6H15V4Z'%3E%3C/path%3E%3C/svg%3E");
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        width: 24px;
+                        height: 24px;
+                        position: absolute;
+                        left:-30px;
+                        top:0;
+                        color:#ccc;
+                    }
+                }
             }
-            li:not(:has(> b)):before{
+
+
+            & > li .header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    font-size: 1.5rem;
+                    color: #68686850;
+                    border-radius: 9999px;
+                    background-color: rgba(211, 211, 211, 0.219);
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 3px;
+                }
+                strong{
+                    font-weight: normal;
+                    font-size: 1.5rem;
+                
+                }
+            }
+           
+            /* li:before{
                 content: " ";
                 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(199,199,199,1)'%3E%3Cpath d='M17 2V4H20.0066C20.5552 4 21 4.44495 21 4.9934V21.0066C21 21.5552 20.5551 22 20.0066 22H3.9934C3.44476 22 3 21.5551 3 21.0066V4.9934C3 4.44476 3.44495 4 3.9934 4H7V2H17ZM7 6H5V20H19V6H17V8H7V6ZM9 16V18H7V16H9ZM9 13V15H7V13H9ZM9 10V12H7V10H9ZM15 4H9V6H15V4Z'%3E%3C/path%3E%3C/svg%3E");
                 background-repeat: no-repeat;
@@ -295,7 +360,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
                 left:-30px;
                 top:0;
                 color:#ccc;
-            }
+            } */
         }
 
     }

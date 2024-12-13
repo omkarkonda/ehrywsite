@@ -23,4 +23,17 @@ window.addEventListener("DOMContentLoaded", () => {
         })
     })
 
+
+    const accordionItems = document.querySelectorAll('.formsList ol > li');
+
+    accordionItems.forEach(item => {   
+        item.addEventListener('click', () => {
+            accordionItems.forEach(item => {
+                item.classList.remove('active')
+            })
+            item.classList.toggle('active');
+            
+        });
+    });
+
 })
