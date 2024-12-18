@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../nav.css">
     <link rel="stylesheet" href="../footer.css">
     <link rel="stylesheet" href="../features.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="topnav">
@@ -142,245 +143,220 @@
     </section>
 
 
-    <!-- <section class="short_features">
-        <div class="card">
-            <img src="../assets/images/appt.svg" alt="" srcset="">
-            <p>Appointments</p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/video_chat.svg" alt="" srcset="">
-            <p>Teletherapy Sessions </p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/mail.png" alt="" srcset="">
-            <p>Messaging</p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/dollar.svg" alt="" srcset="">
-            <p>Payments</p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/reviewForms.svg" alt="" srcset="">
-            <p>Forms Submission</p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/upload.svg" alt="" srcset="">
-            <p>Document/File Upload</p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/form.svg" alt="" srcset="">
-            <p>Document Viewing</p>
-        </div>
-        <div class="card">            
-            <img src="../assets/images/userbadge.svg" alt="" srcset="">
-            <p>Personal Information</p>
-        </div>
+    <section class="sections__container">
+        <div class="lines">
+
+            <svg width="74" height="5170" viewBox="0 0 74 5170" fill="none" class="svg">
+                <path d="M32.059 0C32.059 0 32.059 66.5323 32.059 76.0359C32.059 85.5395 1.04656 107.548 25.0557 114.05C49.0648 120.553 29.558 80.0374 23.0553 95.0431C16.5525 110.049 33.059 100.045 33.059 117.552C33.059 135.058 33.0587 630.254 33.0587 654.263C58.0676 702.781 74.0744 684.775 70.573 663.266C67.0717 641.758 33.0587 681.773 33.0587 686.275C33.0587 690.777 32.059 1262.5 32.059 1262.5V1466.5V1516C29.5567 1516 24.3522 1517.3 23.5522 1522.5C23.5522 1522.5 25.5522 1531.5 15.5522 1526.5C14.2189 1525.83 10.5522 1526.3 6.55221 1533.5C2.55221 1540.7 7.21888 1541.5 10.0522 1541L10.0522 1547C7.55225 1548 3.75225 1551.6 8.55225 1558C13.3522 1564.4 17.2189 1562.33 18.5522 1560.5L23.5522 1563.5C23.5522 1566.17 25.2522 1571.3 32.0522 1570.5C38.8522 1569.7 39.8856 1565.5 39.5522 1563.5L45.0522 1560.5C47.0522 1562.17 52.0523 1563.8 56.0523 1557C60.0523 1550.2 56.0522 1547.5 53.5522 1547V1540C50.2189 1535.67 41.2522 1529.5 32.0522 1539.5C32.0522 1555.5 32.0522 1989.83 32.0522 2204.5L7.05225 2214.5L50.0523 2235.5V2197.5L40.0522 2215.5L18.5522 2221L31.5522 2235V3152.5V3311C23.2015 3312.5 6.5 3319.8 6.5 3337C6.5 3358.5 27.6045 3362 31.5522 3362C35.5 3362 57 3355.5 56 3337C55 3318.5 38.1045 3312.5 31.5522 3314C25 3315.5 14.4478 3328.45 23 3337C29.8418 3343.84 38.5174 3337.18 42 3333C43.0348 3327.33 42.394 3317.5 31.5522 3323.5C20.7104 3329.5 27.0348 3355.33 31.5522 3367.5V3678V3909L12 3931L31.5522 3929L12 3953L31.5522 3945V4363C35.3682 4364.33 45 4372.5 42.5 4372.5C40 4372.5 23.8 4360.1 21 4372.5C18.4032 4384 44.6429 4380.5 41.5 4390.5C37.8857 4402 17 4387 21 4390.5C25 4394 28.5 4394 30.5 4396C32.5 4398 31.5522 4401.5 31.5522 4410.5V4823C35.2015 4818.83 45 4813 55 4823C65 4833 43.5348 4843.83 31.5522 4845C31.5522 4845 31.3035 4841.63 31.5522 4839.5C33.1522 4825.77 55 4866 55 4866H31.5522V5167C31.5522 5167 49.4712 5167.95 49.5 5155C49.5408 5136.65 -9.322 5158.23 12.5 5145C76 5106.5 15.815 5167.03 29.5 5167" stroke="black" stroke-opacity="0.2" stroke-width="5"/>
+                
+                <path d="M32.059 0C32.059 0 32.059 66.5323 32.059 76.0359C32.059 85.5395 1.04656 107.548 25.0557 114.05C49.0648 120.553 29.558 80.0374 23.0553 95.0431C16.5525 110.049 33.059 100.045 33.059 117.552C33.059 135.058 33.0587 630.254 33.0587 654.263C58.0676 702.781 74.0744 684.775 70.573 663.266C67.0717 641.758 33.0587 681.773 33.0587 686.275C33.0587 690.777 32.059 1262.5 32.059 1262.5V1466.5V1516C29.5567 1516 24.3522 1517.3 23.5522 1522.5C23.5522 1522.5 25.5522 1531.5 15.5522 1526.5C14.2189 1525.83 10.5522 1526.3 6.55221 1533.5C2.55221 1540.7 7.21888 1541.5 10.0522 1541L10.0522 1547C7.55225 1548 3.75225 1551.6 8.55225 1558C13.3522 1564.4 17.2189 1562.33 18.5522 1560.5L23.5522 1563.5C23.5522 1566.17 25.2522 1571.3 32.0522 1570.5C38.8522 1569.7 39.8856 1565.5 39.5522 1563.5L45.0522 1560.5C47.0522 1562.17 52.0523 1563.8 56.0523 1557C60.0523 1550.2 56.0522 1547.5 53.5522 1547V1540C50.2189 1535.67 41.2522 1529.5 32.0522 1539.5C32.0522 1555.5 32.0522 1989.83 32.0522 2204.5L7.05225 2214.5L50.0523 2235.5V2197.5L40.0522 2215.5L18.5522 2221L31.5522 2235V3152.5V3311C23.2015 3312.5 6.5 3319.8 6.5 3337C6.5 3358.5 27.6045 3362 31.5522 3362C35.5 3362 57 3355.5 56 3337C55 3318.5 38.1045 3312.5 31.5522 3314C25 3315.5 14.4478 3328.45 23 3337C29.8418 3343.84 38.5174 3337.18 42 3333C43.0348 3327.33 42.394 3317.5 31.5522 3323.5C20.7104 3329.5 27.0348 3355.33 31.5522 3367.5V3678V3909L12 3931L31.5522 3929L12 3953L31.5522 3945V4363C35.3682 4364.33 45 4372.5 42.5 4372.5C40 4372.5 23.8 4360.1 21 4372.5C18.4032 4384 44.6429 4380.5 41.5 4390.5C37.8857 4402 17 4387 21 4390.5C25 4394 28.5 4394 30.5 4396C32.5 4398 31.5522 4401.5 31.5522 4410.5V4823C35.2015 4818.83 45 4813 55 4823C65 4833 43.5348 4843.83 31.5522 4845C31.5522 4845 31.3035 4841.63 31.5522 4839.5C33.1522 4825.77 55 4866 55 4866H31.5522V5167C31.5522 5167 49.4712 5167.95 49.5 5155C49.5408 5136.65 -9.322 5158.23 12.5 5145C76 5106.5 15.815 5167.03 29.5 5167" class="purpleline"/>
+            </svg>
+                
+                
+                
+        </div> 
+
+        <h2>Visit / Note </h2>       
         
-    </section> -->
-
-    <section class="long_features">
-        <h2>Billing Pre CC4</h2>
-        <div class="cards__wrapper">
-            <div class="cards billing">
-                <div class="long__card" data-card="1">
-                    <h3>Efficient Charge Capture</h3>
-                    <p>Our system streamlines charge capture by automatically collecting billing data from various sources, including appointment schedulers, group therapy sessions, and electronic notes. Transform your appointment scheduler into a powerful billing tool, where each check-in, check-out, or even missed or cancelled appointment triggers the capture of essential billing data. This feature ensures accuracy and ease, enhancing workflow efficiency and saving you time while reducing errors in your practice's billing information.  
-                    </p>
-                    
+        <section class="billingsection">                      
+            <div class="content__wrapper">
+                <div class="content">
+                    <div class="left">
+                        <h3>Automated and On-Demand <br> Eligibility Checks </h3>
+                        <figure>
+                            <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M109.259 174.016L64 128.747L79.0827 113.664L109.259 143.829L169.589 83.488L184.683 98.5813L109.259 174.016Z" fill="#ABB0BF"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6667 128C10.6667 63.2 63.2 10.6667 128 10.6667C192.8 10.6667 245.333 63.2 245.333 128C245.333 192.8 192.8 245.333 128 245.333C63.2 245.333 10.6667 192.8 10.6667 128ZM128 224C115.393 224 102.91 221.517 91.2624 216.692C79.6151 211.868 69.0322 204.797 60.1177 195.882C51.2033 186.968 44.132 176.385 39.3076 164.738C34.4831 153.09 32 140.607 32 128C32 115.393 34.4831 102.91 39.3076 91.2624C44.132 79.6151 51.2033 69.0322 60.1177 60.1177C69.0322 51.2033 79.6151 44.132 91.2624 39.3076C102.91 34.4831 115.393 32 128 32C153.461 32 177.879 42.1143 195.882 60.1177C213.886 78.1212 224 102.539 224 128C224 153.461 213.886 177.879 195.882 195.882C177.879 213.886 153.461 224 128 224Z" fill="#ABB0BF"/>
+                                </svg>                                                                
+                        </figure>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><strong>On-Demand Checks:</strong> Run eligibility checks in real-time from client charts, appointments, or billing windows. </li>
+                            <li><strong>Automated Checks Scheduling:</strong> Set eligibility checks to run daily, weekly, monthly, or annually, on future appointments or across client population. </li>
+                            <li><strong>Multiple Check Runs:</strong> Set multiple automated eligibility check runs by health plan, enabling precise and timely verification. </li>
+                            <li><strong>Centralized Review Window:</strong> Access all completed eligibility checks with clear statuses (active, inactive, failed) in one window. </li>
+                            <li><strong>Payor Identification:</strong> Identify additional payors like Medicare Advantage or HMO plans for accurate billing. </li>
+                            <li><strong>Service-Specific Checks:</strong> Configure eligibility checks for specific services, such as Mental Health, to surface relevant results. </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="long__card" data-card="2">
-                    <p>Billing for group therapy has never been easier. Our system is built to handle multiple patients simultaneously, ensuring that billing data for each session is accurately captured. Whether sessions are completed, missed, or cancelled, your billing is always up to date. </p>                   
-                </div>                            
-                <div class="long__card" data-card="3">
-                    <p>Our easy forms are designed with your workflow in mind. Providers can easily document services, and once completed, our system ensures that the billing is triggered. No manual entry needed — we automate the process to capture everything from service codes to provider information. </p>                   
-                </div>                            
-                <div class="long__card" data-card="4">
-                    <p>We simplify the billing process for inpatient and outpatient programs. Each day a patient is enrolled in a program, our system automatically captures a billing record. Whether it's a short outpatient session or an extended inpatient stay, all the necessary details are recorded effortlessly. </p>                   
-                </div>                            
-                <div class="long__card" data-card="5">
-                    <p>Managing paper documents? No problem. Our document management system allows you to upload and categorize all necessary paperwork. Billable documents, such as court service records, can be easily flagged to ensure no billing opportunity is missed. Non-billable documents are stored for easy access without cluttering your billing data. </p>                   
-                </div>                            
-                <div class="long__card" data-card="6">
-                    <p> Every practice is unique, and our system reflects that. We offer special billing rules that adapt to your specific workflow. From auto-capturing diagnosis codes to adjusting charges based on service durations, our system is built to handle complex billing scenarios seamlessly. 
+                <div class="content">
+                    <div class="left">
+                        <ul>
+                            <li><strong>Customizable Billing Fields:</strong> Display specific billing-related fields in the appointments window and limit access to authorized users or roles for enhanced control.</li>
+                            <li><strong>Comprehensive Billing Details:</strong> View copays, eligibility, and insurance information within the appointment for efficient copay collection and updates during the visit.</li>
+                            <li><strong>Billing Party Linkage:</strong> Automatically link appointments to the "bill to" party (insurance or client, if client is specified to be self-pay).</li>
+                            <li><strong>Copay Linkage:</strong> Automatically link appointments to co-pay amounts for streamlined collections.</li>
+                            <li><strong>Service-Specific Copay Integration:</strong> Link appointments to the copay amount for the CPT code of the service documented in the appointment.</li>
+                            <li><strong>Health Plan End Date Alerts:</strong> Get notified real-time if a health plan end date conflicts with future appointments, with options provided right then to reassign the billed party for those future appointments.</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Appointment-Level <br> Billing Integration</h3>
+                        <figure>
+                            <svg width="256" height="256" viewBox="0 0 256 256" fill="none">
+                                <path d="M170.667 32C173.496 32 176.209 33.1238 178.209 35.1242C180.21 37.1246 181.333 39.8377 181.333 42.6667V53.3333H202.667C208.325 53.3333 213.751 55.5809 217.752 59.5817C221.752 63.5825 224 69.0087 224 74.6667V202.667C224 208.325 221.752 213.751 217.752 217.752C213.751 221.752 208.325 224 202.667 224H53.3333C47.6754 224 42.2492 221.752 38.2484 217.752C34.2476 213.751 32 208.325 32 202.667V74.6667C32 69.0087 34.2476 63.5825 38.2484 59.5817C42.2492 55.5809 47.6754 53.3333 53.3333 53.3333H74.6667V42.6667C74.6667 39.8377 75.7905 37.1246 77.7909 35.1242C79.7913 33.1238 82.5044 32 85.3333 32C88.1623 32 90.8754 33.1238 92.8758 35.1242C94.8762 37.1246 96 39.8377 96 42.6667V53.3333H160V42.6667C160 39.8377 161.124 37.1246 163.124 35.1242C165.125 33.1238 167.838 32 170.667 32ZM202.667 74.6667H53.3333V202.667H202.667V74.6667ZM158.123 100.043C160.134 98.0996 162.829 97.0245 165.626 97.0488C168.422 97.0731 171.098 98.1949 173.075 100.173C175.053 102.15 176.175 104.826 176.199 107.622C176.224 110.419 175.148 113.114 173.205 115.125L120.491 167.851C119.49 168.852 118.302 169.647 116.994 170.189C115.687 170.731 114.285 171.01 112.869 171.01C111.454 171.01 110.052 170.731 108.744 170.189C107.437 169.647 106.249 168.852 105.248 167.851L82.6987 145.28C80.7556 143.268 79.6805 140.574 79.7048 137.777C79.7291 134.98 80.8509 132.305 82.8286 130.327C84.8063 128.35 87.4816 127.228 90.2784 127.203C93.0752 127.179 95.7696 128.254 97.7813 130.197L112.875 145.28L158.123 100.043Z" fill="#ABB0BF"/>
+                            </svg>                                                                
+                        </figure>
+                    </div>
+                </div>
+            </div>       
+        </section>
+        
 
-                    </p>                   
-                </div>                            
-                <div class="long__card" data-card="7">
-                    <p>Streamline your authorization process with our system's automatic capturing of authorization details directly into claims. Units are deducted based on the documented authorization, ensuring compliance and keeping your billing accurate and up to date. </p>                   
-                </div>                            
-                <div class="long__card" data-card="8">
-                    <p>Customize your fee schedule rules to meet your practice's unique needs, enabling the automatic application of charges based on parameters like service type, provider, duration, and location. This flexibility minimizes manual adjustments and ensures accurate billing every time. </p>                   
-                </div>                            
-                <div class="long__card" data-card="9">
-                    <p>Achieve complete visibility into your billing process with our monitoring reports, allowing you to track the status of records—whether signed off, saved as drafts, or completed. Gain valuable insights to enhance practice management and optimize revenue cycle performance. </p>                   
-                </div>                            
-            </div>
-        </div>
-        <ul id="menu">
-            <li data-menu-id="1">Efficient Charge Capture  </li>
-            <li data-menu-id="2">Seamless Group Therapy Billing </li>       
-            <li data-menu-id="3">Automated Service Forms for Billing </li>       
-            <li data-menu-id="4">Admissions Billing Made Easy  </li>       
-            <li data-menu-id="5">Document Management with Billing </li>       
-            <li data-menu-id="6">Custom Billing Rules for Your Workflow </li>       
-            <li data-menu-id="7">Authorization Auto Capturing and Deduction</li>       
-            <li data-menu-id="8">Fee Schedule Rules </li>       
-            <li data-menu-id="9">Monitoring Reports</li>       
-        </ul>
+        <h2>Charge Capture and Claim Submission</h2>       
+        <section class="billingsection">                     
+            <div class="content__wrapper">
+                <div class="content">
+                    <div class="left">
+                        <h3>Efficient Charge Capture and <br> Billing Automation</h3>
+                        <figure>
+                            <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M233.899 123.808C231.744 118.603 227.125 117.355 224 117.056V85.3334C224 73.568 214.432 64 202.667 64H138.667V49.1734C141.92 46.2507 144 42.048 144 37.3334C144 33.0899 142.314 29.0202 139.314 26.0197C136.313 23.0191 132.243 21.3334 128 21.3334C123.756 21.3334 119.687 23.0191 116.686 26.0197C113.686 29.0202 112 33.0899 112 37.3334C112 42.048 114.08 46.2507 117.333 49.1734V64H53.3332C41.5679 64 31.9999 73.568 31.9999 85.3334V117.301L31.1252 117.365C28.4369 117.559 25.9218 118.764 24.0854 120.737C22.2491 122.71 21.2277 125.305 21.2266 128V149.333C21.2266 152.162 22.3504 154.875 24.3508 156.876C26.3511 158.876 29.0643 160 31.8932 160H31.9999V213.333C31.9999 225.099 41.5679 234.667 53.3332 234.667H202.667C214.432 234.667 224 225.099 224 213.333V160C226.829 160 229.542 158.876 231.542 156.876C233.543 154.875 234.667 152.162 234.667 149.333V128.661C234.789 127.006 234.527 125.345 233.899 123.808ZM53.3332 213.333V85.3334H202.667L202.677 127.957L202.667 128V149.333L202.677 149.387L202.688 213.333H53.3332Z" fill="#ABB0BF"/>
+                                <path d="M90.6667 149.333C99.5032 149.333 106.667 139.782 106.667 128C106.667 116.218 99.5032 106.667 90.6667 106.667C81.8301 106.667 74.6667 116.218 74.6667 128C74.6667 139.782 81.8301 149.333 90.6667 149.333Z" fill="#ABB0BF"/>
+                                <path d="M165.333 149.333C174.17 149.333 181.333 139.782 181.333 128C181.333 116.218 174.17 106.667 165.333 106.667C156.497 106.667 149.333 116.218 149.333 128C149.333 139.782 156.497 149.333 165.333 149.333Z" fill="#ABB0BF"/>
+                                <path d="M85.3333 170.667H170.667V192H85.3333V170.667Z" fill="#ABB0BF"/>
+                            </svg>
+                                
+                        </figure>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><strong>Customizable Billing Triggers:</strong> Configure charge capture triggers based on workflow needs, such as check-in, check-out, missed or cancelled appointments, or note sign-off and co-sign.</li>
+    <li><strong>Appointment-Based Charge Capture:</strong> Include essential billing details directly in appointment fields for automatic inclusion in claims during creation.</li>
+    <li><strong>Note Billing Auto-Population:</strong> Automatically populate notes with billing data from appointments, capturing service codes, provider details, and other information for accurate claim creation.</li>
+    <li><strong>Group Therapy Billing:</strong> Automatically capture billing data for group sessions, whether completed, missed, or cancelled, eliminating manual adjustments.</li>
+    <li><strong>Admissions Billing:</strong> Generate daily billing records for clients enrolled in inpatient or outpatient programs, ensuring accurate charge capture for both short-term and extended stays.</li>
+    <li><strong>Authorization Auto-Capturing:</strong> Automatically capture authorization details into claims and deduct units based on the documented authorizations for compliance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <ul>
+                            <li><strong>Centralized Charge Review:</strong> Access all charges ready for claims in one window to review and ensure accuracy.</li>
+                            <li><strong>Flexible Claim Submission:</strong> Automate claim creation and submission or manually create and submit, individually or in batches.</li>
+                            <li><strong>Comprehensive Billing Formats:</strong> Support multiple formats, including CMS1500 for outpatient services, UB04 for inpatient services, and customized invoices or superbills for third-party payers.</li>
+                            <li><strong>Customizable Claim Forms:</strong> Set up rules to auto-populate key fields like Box 24J (NPI and Taxonomy), Box 33 (Organization Details), Box 32A (Facility NPI), NDC codes for drug CPT billing, and CLIA numbers for laboratory services.</li>
+                            <li><strong>Automated Format Conversion:</strong> Automatically convert CMS1500 claims to UB04 format for streamlined submission of inpatient or institutional billing.</li>
+                            <li><strong>Multiple Submission Methods:</strong> Submit claims electronically (837P for CMS1500, 837I for UB04) or by mail using printed claims.</li>
+                            <li><strong>Batch or Single Submission:</strong> Create and send one or multiple claims at once with a single click, improving efficiency.</li>
+                            <li><strong>Client Statement Generation:</strong> Automatically generate and send client statements for self-pay clients via the portal or email based on their preference.</li>
+                            <li><strong>Customizable Statements and Invoices:</strong> Tailor client statements and third-party invoices to meet practice needs, with easy access through the client portal.</li>
+                            <li><strong>Unapplied Payment Allocation:</strong> Apply collected copay payments to outstanding client balances for accurate invoicing.</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Claim Creation and Submission</h3>
+                        <figure>
+                            <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M219.307 35.6267C217.762 34.5575 215.961 33.9155 214.088 33.7657C212.215 33.6158 210.336 33.9634 208.64 34.7733L27.3068 120.107C25.4586 120.987 23.9026 122.38 22.8245 124.12C21.7464 125.86 21.1918 127.873 21.2268 129.92C21.2607 131.965 21.882 133.958 23.0168 135.66C24.1515 137.362 25.7518 138.702 27.6268 139.52L85.3334 164.8V236.48L147.627 192L198.4 214.187C199.733 214.82 201.191 215.148 202.667 215.147C204.628 215.133 206.547 214.58 208.213 213.547C209.682 212.658 210.914 211.427 211.806 209.96C212.697 208.493 213.221 206.833 213.333 205.12L224 45.12C224.112 43.266 223.738 41.4148 222.915 39.7497C222.092 38.0847 220.848 36.6634 219.307 35.6267ZM193.067 188.587L136.853 163.947L170.667 97.8133L89.0668 143.147L57.8134 129.387L201.493 61.76L193.067 188.587Z" fill="#ABB0BF"/>
+                                </svg>                                
+                        </figure>
+                    </div>
+                </div>
+            </div>       
+        </section>
+        
+        
+        <h2>Claim Resolution</h2>       
+        <section class="billingsection">                     
+            <div class="content__wrapper">
+                <div class="content">
+                    <div class="left">
+                        <h3>Automated or Manual <br>Payment Application</h3>
+                        <figure>
+                            <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M53.3333 149.333H202.667V160H53.3333V149.333ZM224 181.333V85.3334H32V181.333H224ZM10.6667 53.3334H245.333V202.667H10.6667V53.3334ZM53.3333 106.667H128V128H53.3333V106.667Z" fill="#ABB0BF"/>
+                                </svg>
+                                
+                        </figure>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><strong>Electronic Remittance Advice (ERA):</strong> Automatically receive ERAs from clearinghouses or manually import ERA files from payer portals for flexible payment processing.</li>
+                            <li><strong>Zero-Paid vs. Paid Check Segregation:</strong> The software separates zero-payment checks from those with payments, allowing billers to quickly apply payments individually or in bulk for non-zero checks while focusing on manual review for zero-payment checks in a dedicated window.</li>
+                            <li><strong>Actionable Zero-Paid Check Handling:</strong> Review adjustment code reasons for zero-payment checks and take actions like claim resubmission, balance transfer to the client, or writing off balances directly from the zero-paid window.</li>
+                            <li><strong>Manual Payment Posting:</strong> Enter insurance or client payments manually for cash, checks, PayPal, or other sources.</li>
+                            <li><strong>Paper EOB Entry:</strong> Record Explanation of Benefits (EOB) details from paper-based claims manually to ensure accurate financial records.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left noicon">
+                        <h3>Rejection and Denial Management </h3>
+                        <ul>
+                            <li><strong>Reason Visibility:</strong> View rejection and denial reasons in centralized windows for targeted action.</li> 
+                            <li><strong>Actionable Filters:</strong> Filter by rejection or denial reason or by payer to address rejections and denials based on specific reason or payer-specific workflows and guidelines.</li>                             
+                            <li><strong>Streamlined Workflow:</strong> Edit, resubmit claims, transfer balances, or write off directly from these windows.</li> 
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Comprehensive Claims Management Window </h3>
+                        <ul>
+                            <li><strong>Track Balances and Status:</strong> Monitor claim balances, payer details (primary, secondary, tertiary, or client), and claim aging in one view. </li>
+                            <li><strong>Next Payer Transition:</strong> Transition claims to the next payer or generate client statements directly from the window. </li>
+                        </ul>                
+                       
+                    </div>
+                </div>
+
+                          
+
+                <div class="content">
+                    <div class="left">
+                        <ul>
+                            <li><strong>Credit Card Integration:</strong> Accept client payments via Nexio, supporting credit card, ACH, and POS terminal transactions for convenience.</li>
+                            <li><strong>Automatic Payment Collection:</strong> Set up scheduled payment plans (monthly, bi-weekly, weekly, or one-time) for client balances, ensuring timely payments.</li>
+                            <li><strong>Automatic Payment Receipts:</strong> Automatically send receipts to clients after payments are collected, improving communication and transparency.</li>
+                            <li><strong>Copay Charges:</strong> Automate the creation of copay bills and collect payments upfront during check-in, minimizing administrative burden.</li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Client Payment Features </h3>
+                        <figure>
+                            <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M204 48H52C36.536 48 24 60.536 24 76V180C24 195.464 36.536 208 52 208H204C219.464 208 232 195.464 232 180V76C232 60.536 219.464 48 204 48Z" stroke="#ABB0BF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24 96H232M64 150H88V160H64V150Z" stroke="#ABB0BF" stroke-width="7" stroke-linejoin="round"/>
+                            </svg>                                
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="left noicon">
+                        <h3>Flexible Refund Management </h3>
+                        <ul>
+                            <li><strong>Quick Refunds:</strong> Process refunds or void credit card payments efficiently through Nexio. </li>
+
+                            <li><strong>Manual Refund Documentation:</strong> Track refunds processed via cash or check for audit readiness.  </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <h3>Write-Off and Financial Controls </h3>                        
+                        <ul>
+                            <li><strong>Batch Write-Offs:</strong> Manage financial adjustments efficiently with individual or batch write-offs. </li>
+                            <li><strong>Charge Locking:</strong> Secure the creation, modification, or deletion of charges to maintain data integrity. </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="left">
+                        
+                    </div>
+                    <div class="right">
+                        
+                    </div>
+                </div>
+            </div>       
+        </section>   
+
     </section>
-   
-    <section class="additional_features">
-        <h2>Billing & Online Payments <br> (everything Post-CC4) </h2>
 
-        <div class="cards">
-            <div class="card">
-                <h4>Comprehensive Claims Billing and Payment Management Solution </h4>
-                <p>Our advanced billing system is designed to streamline and simplify the entire claims and payment process for healthcare providers. Supporting industry-standard claim formats, extensive customization options, and seamless payment integration, our solution ensures efficiency, accuracy, and compliance at every stage. </p>
-            </div>
-
-            <h4>Claims Billing Formats </h4>
-            
-            <div class="row">
-                <div class="card">
-                    <strong>We offer support for various standard billing formats to accommodate a wide range of services: </strong>
-                    <ul>
-                        <li>CMS1500 for outpatient services</li>
-                        <li>UB04 for inpatient services</li>
-                        <li>Customized Invoice/Superbill for third-party payers</li>
-                        <li>Claim Form Customizations</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <strong>Our system provides extensive customization options for claims, allowing you to tailor forms to meet the specific needs of your practice or payer</strong>
-                    <ul>
-                        <li>Supervisor NPI and Taxonomy in Box 24J of CMS1500</li>
-                        <li>Organization NPI in Box 24J</li>
-                        <li>Organization Details in Box 33, customizable by Program, Payer, and Location</li>
-                        <li>Facility NPI in Box 32A for service location identification</li>
-                        <li>NDC Codes for Drug CPT billing</li>
-                        <li>Claim Numbers for laboratory services based on the facility</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h4>Claims Sending Formats </h4>
-
-            <div class="row">
-                <div class="card">
-                    <strong>Efficiently submit claims electronically or by mail, depending on your operational needs:</strong>
-                    <ul>
-                        <li>837P Format for CMS1500 claims</li>
-                        <li>837I Format for UB04 claims</li>
-                        <li>Printed Claims for CMS1500 and UB04 for manual mailing</li>
-                        <li>Customized Invoices for third-party billing</li>
-                        <li>Patient Statement Customization</li>
-                    </ul>
-                    <p>We can customize patient statements to fit your practice’s needs. Statements are easily accessible via the patient portal, allowing patients to view and settle outstanding balances effortlessly. </p>
-                </div>
-                <div class="card">
-                    <strong>Rejection and Denial Management </strong>
-                    <ul>
-                      <li>Our system includes dedicated modules to handle claim rejections and denials, minimizing delays and boosting revenue: </li>
-                      <li><b>Rejection Management:</b> Identify, correct, and resubmit rejected claims quickly and accurately. </li>
-                      <li><b>Denial Management:</b> Track denials and their reasons, enabling efficient correction and resubmission from a single interface. </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="posting">
-                <h4>
-                    Payments Posting - Simplify payment collection with integrated tools for both automated and manual payment posting: 
-                </h4>
-
-                <ul>
-                    <li><strong>Credit Card Integration:</strong> Accept payments through Nexio, including credit card, bank account (ACH), and POS terminal transactions.</li>
-
-                    <li><strong>Electronic Remittance Advice (ERA):</strong> Automate payment posting by receiving detailed payment information directly from the clearinghouse.</li>
-
-                    <li><strong>Import ERA:</strong> Import ERA files manually, even from payer portals, for flexible payment management.</li>
-
-                    <li><strong>Manual Payment Posting:</strong> Post patient payments received via cash, checks, PayPal, or other sources manually.</li>
-
-                    <li><strong>Insurance Paper EOB Posting:</strong> Manually enter Explanation of Benefits (EOB) for paper-based claims.</li>
-
-                    <li><b>Refunds and Void Transactions</b></li>
-
-                    <li>Process refunds or void credit card payments efficiently through the Nexio gateway. Document manual refunds using various methods, including cash and checks, for complete transparency.</li>
-
-                    <li><b>Payment Application</b></li>
-
-                    <li>Our system offers flexible payment application features to ensure accurate allocation of funds</li>
-
-                    <li><strong>Manual Payment Application:</strong> Apply insurance or patient payments manually to individual claims.</li>
-
-                    <li><strong>Bulk Payment Application:</strong> Utilize the VLV (Volume Large Value) feature to efficiently apply multiple payments in one go.</li>
-
-                    <li><b>Charges and Payment Locking</b></li>
-
-                    <li>Maintain the integrity of your financial data by securing important actions within the system:</li>
-
-                    <li>Lock the creation, modification, or deletion of charges.</li>
-
-                    <li>Secure payment-related actions such as posting, applying payments, modifying applied payments, and deleting payments.</li>
-
-                    <li><b>Write-Off Charges</b></li>
-
-                    <li>Easily write off outstanding balances for individual claims or manage batch write-offs for multiple claims, improving financial efficiency.</li>
-
-                    <li><b>Copay Charges</b></li>
-
-                    <li>Seamlessly manage co-pays with automated features that create copay bills. Collect and apply copay payments upfront during patient check-in, reducing administrative burden.</li>
-
-                    <li><b>Integrated In-House Clearinghouse</b></li>
-
-                    <li>Our system includes an integrated clearinghouse (Claim.MD) that automates key aspects of the claims submission and payment process:</li>
-
-                    <li><strong>Real-time Insurance Eligibility Checks:</strong> Verify patient eligibility for services before claims are submitted.</li>
-
-                    <li><strong>Electronic Claim Submission and Status Updates (277):</strong> Submit claims electronically and track their status with ease.</li>
-
-                    <li><strong>Electronic Payment Receipt (ERAs):</strong> Automatically receive payment information from insurers and apply it to your system.</li>
-
-                    <li><b>Automation Services</b></li>
-
-                    <li>Maximize efficiency with comprehensive automation options for claims and payment management</li>
-
-                    <li><strong>Claims Creation and Submission:</strong> Automatically generate and submit insurance claims.</li>
-
-                    <li><strong>Patient Statements:</strong> Create and submit patient statements to the portal automatically.</li>
-
-                    <li><strong>Automatic Payment Collection:</strong> Set up scheduled payment plans (monthly, weekly, or one-time) for credit cards or bank accounts (ACH).</li>
-
-                    <li><strong>Automatic Payment Receipts:</strong> Automatically send receipts to patients after payments are collected.</li>
-
-                    <li><strong>Automated Payment Application:</strong> Automatically apply patient payments to outstanding balances, including co-pays.</li>
-
-                    <li><b>Billing Reports</b></li>
-
-                    <li>Gain valuable insights into your billing and revenue cycle with customizable reports</li>
-
-                    <li><strong>Accounts Receivable:</strong> Track outstanding claims and boost cash flow by focusing on unpaid balances.</li>
-
-                    <li><strong>Charges Report:</strong> Analyze charges (insurance and self-pay) based on the Date of Service (DOS).</li>
-
-                    <li><strong>Collection Reports:</strong> Track payments by posted date, applied date, or DOS for a clear view of your financial health.</li>
-
-                    <li><strong>Sent Claims Tracking:</strong> Monitor the status of electronically submitted claims through the clearinghouse.</li>
-
-                    <li><strong>Payroll Reports:</strong> Generate dynamic payroll reports based on either a percentage of applied payments or a flat rate per session, providing greater transparency for staff compensation.</li>
-
-                </ul>
-
-
-            </div>
-
-        </div>
-
-    </section>  
-
-
-
-    <section id="footer__container">
+   <section id="footer__container">
         <div id="footer">
             <div class="logo">
                 <img src="../assets/images/adaptamed_logo.png" alt="">

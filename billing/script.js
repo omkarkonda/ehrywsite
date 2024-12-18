@@ -1,26 +1,21 @@
-window.addEventListener("DOMContentLoaded", () => {    
-    const cardsContainer = document.querySelector(".cards");    
-    const menuItems = document.querySelectorAll("#menu > li");
 
-    const animateCards = (id) => {   
-        const card = document.querySelector(`.long__card[data-card="${id}"]`);        
-        const cardYval = card.offsetTop;
-        gsap.to(cardsContainer, {
-            y: -cardYval,
-            opacity: 1,
-            duration: 0.9,                       
-            ease: "back"
-        })
-    }
-    
-    
-    menuItems.forEach(item => {           
-        item.addEventListener("click", () => {            
-            menuItems.forEach(listItem => listItem.classList.remove("active"));
-            item.classList.add("active");
-            const id = item.dataset.menuId;
-            animateCards(id);
-        })
-    })
+// JavaScript to detect when the SVG container comes into view
+const svg = document.querySelector('.svg');
+const path = svg.querySelector('.purpleline');
 
-})
+/**
+ * This function gets called whenever the user scrolls.
+ * It calculates how much of the purple line should be shown based on how far down the user has scrolled.
+ */
+function scroll(){
+    const distance = window.scrollY;
+    const height = svg.clientHeight - window.innerHeight;
+    const percentage = distance / height;
+    const pathLength = path.getTotalLength();  
+    path.style.strokeDasharray = `${pathLength} ${pathLength}`;
+    path.style.strokeDashoffset = `${pathLength * (1 - percentage * 0.78)}`;      
+}
+
+scroll();
+
+window.addEventListener('scroll', scroll);
