@@ -1,15 +1,17 @@
 
 .sections__container{
     position: relative;
-    
+    min-width: 1200px;
     .lines{        
-        width: 100%;
-        position: absolute;        
+        width: 150px;
+        position: absolute;
         top: 130px;
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index:1;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
         svg{            
             path{
                 stroke-width: 8px;
@@ -40,14 +42,21 @@
 .billingsection{    
     
     position: relative;        
-     
 
     .content__wrapper{
-        max-width: 1200px;        
+        width: 1200px;        
         background-color: aliceblue;
         margin-inline: auto;       
         border: 1px solid #cccccc;
         border-radius: 1rem;
+        
+        
+    }
+
+    .content__wrapper.settings{
+        background-color: transparent;
+        margin-bottom: 3rem;
+        background-image: linear-gradient(180deg, #eddbf89c 0%, #F8FAFB 100%);
     }
 
     .content{        
@@ -66,7 +75,9 @@
             display: flex;
             justify-content: flex-end;
             text-align: right;
-            color: purple;
+            color: var(--navy-blue);
+            font-size: 1.5rem;
+            font-weight: 500;
         }
 
        h3+ul{
@@ -75,12 +86,16 @@
 
         .left.noicon h3{            
             justify-content: flex-start;
-            text-align: left;            
+            text-align: left;
+
         }
 
         .right h3{
             justify-content: flex-start;
-            color: purple;
+            color: var(--navy-blue);
+            font-size: 1.5rem;
+            font-weight: 500;
+            
         }
 
         .left figure, 
@@ -109,6 +124,8 @@
         }
     }
 }
+
+
 
 @keyframes pulse {
     0% {

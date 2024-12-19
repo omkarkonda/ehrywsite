@@ -13,7 +13,7 @@ function scroll(){
     const percentage = distance / height;
     const pathLength = path.getTotalLength();  
     path.style.strokeDasharray = `${pathLength} ${pathLength}`;
-    path.style.strokeDashoffset = `${pathLength * (1 - percentage * 0.78)}`;      
+    path.style.strokeDashoffset = `${pathLength * (1 - percentage * 0.75)}`;      
 }
 
 scroll();
